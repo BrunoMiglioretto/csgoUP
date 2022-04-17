@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fontes/Cold\ Warm.otf);
+}
+
+body {
+    background-color: #000;
+    font-family: myFirstFont;
+    margin-bottom: 250px;
+}
+
+main h1 {
+    color:#54ce54;
+    font-size: 60px;
+    text-align: center;
+    padding: 80px;
+}
+
+.header-container { 
+    display: grid;
+    align-items: flex-end;
+    grid-gap: 150px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 50px;
+    padding-bottom: 15px;
+    margin: 0 180px;
+    color: #FFF;
+}
+    .header-container .header-logo {
+        height: 120px;
+    }
+
+
+    .header-container ul.header-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+        .header-container ul.header-menu li {
+            font-weight: bold;
+            font-size: 30px;
+            padding: 0 20px;
+        }
+
+    .header-container .header-login-container {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        justify-self: end;
+    }
+
+        .header-container .header-login-container img {
+            height: 70px;
+            padding-right: 20px;
+        }
+
+        .header-container .header-login-container p {
+            font-size: 30px;
+        }
+
+        .header-container .header-login-container .nickname {
+            color: #777;
+        }
+
+        .header-container .header-login-container .saldo {
+            color: #54ce54;
+        }
+
+
+.carrossel-container {
+    width: 99vw;
+    overflow-x: hidden;
+}
+    .carrossel-container ul {
+        display: flex;
+        
+    }
+
+    .carrossel-container ul li img {
+        height: 200px;
+    }
+
+
+.caixa {
+    border: 1px solid rgb(15, 15, 15);
+    box-shadow: 0 0 10px 10px rgb(31, 31, 31);
+    border-radius: 25px;
+}
+
+.container-roleta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}   
+
+    .container-roleta .caixa.secundaria {
+        z-index: 0;
+        background-color: rgb(65, 65, 65);
+        width: 500px;
+        height: 500px;
+    }
+
+    .container-roleta .caixa.primaria {
+        z-index: 1;
+        background-color: #777;
+        width: 700px;
+        height: 700px;
+    }
+
+.container-inventario {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-item {
+    background-color: rgb(65, 65, 65);
+    padding: 25px;
+    margin: 0 180px;
+}
+
+    .lista-item.pequeno {
+        width: 40%;
+        height: 700px;
+    }
+
+    .lista-item .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .lista-item .header {
+        color: #FFF;
+        font-size: 20px;
+    }
+
+    .lista-item .header .ordenador {
+        color:#54ce54;
+    }
+
+    .lista-item .body {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        height: 95%;
+    }
+
+        .lista-item .body img {
+            height: 200px;
+        }
