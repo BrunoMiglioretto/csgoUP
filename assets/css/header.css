@@ -185,7 +185,7 @@ main h1 {
 .container-inventario{
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     /* background-color: rgbal(255,255,255,0.1); */
     backdrop-filter: blur(20px);
     /* -webkit-backdrop-filter: blur(10px); */
@@ -193,8 +193,8 @@ main h1 {
     height: 1400px;
     margin: auto;
     margin-top: 100px; 
-    gap: 30px;
-    padding: 40px;
+    gap: 20px;
+    padding: 30px;
 }
 
     .container-inventario figure.card{
@@ -203,12 +203,12 @@ main h1 {
         padding: 7px;
         border-radius: 15px;
         transition: all 0.6s cubic-bezier(0.2, 0.84, 0.44, 1);
-        height: 200px;
+        height: 220px;
     }
 
         .container-inventario figure.card .weapon{                
             filter: drop-shadow(10px 10px 10px rgba(0,0,0,5));
-            height: 100px;
+            height: 110px;
             padding: 10PX;
             /* padding-block-end: 0;  */           
         }
