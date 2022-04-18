@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Lalezar';
+    src: url('Lalezar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Markazi';
+    src: url('MarkaziText-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.bg{
+    background-image: linear-gradient(90deg, #5f8199 10%, #9A8A5D);
+    background-attachment: fixed;
+}
+.botao-login{
+    font-size: 35px;
+    color: white;
+    font-family: 'Lalezar';
+    text-decoration: underline;
+    font-weight: normal;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 35px;
+}
+.botao-login:hover{
+    color: #838383;
+    transition: 0.3s ease-in-out;
+}
+.botao-register:hover{
+    
+    color: #838383;
+    transition: 0.3s ease-in-out;
+}
+.botao-register{
+    width: 60%;
+    font-size: 35px;
+    color: white;
+    font-family: 'Lalezar';
+    text-decoration: underline;
+    font-weight: normal;
+    word-spacing: 120px;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    cursor: pointer;
+}
+#register{
+    display: none;
+}
+.botao-signin{
+    background-color: #494949;
+    border: none;
+    padding: 5px;
+    width: 60%;
+    border-radius: 10px;
+    font-family: 'Markazi';
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+.botao-signin:hover{
+    background-color: #292929;
+    transition: 0.3s ease-in-out;
+}
+.input-email{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    color: white;
+}
+.input-steam{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    color: white;
+}
+.input-new-password{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    color: white;
+}
+.input-confirm{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    color: white;
+}
+.input-user{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;  
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 2px;
+    width: 90%;
+    color: white;
+}
+.input-pass{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    width: 90%;
+    color: white;
+}
+.input-enter{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 70%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+}
+.input-enter:hover{
+    transition: 0.3s ease-out;
+    width: 135px;
+    height: 135px;
+}
+.remember{
+    font-family: 'Markazi';
+    position:absolute;
+    top: 79%;
+    left: 70%;
+}
+.remember-font{
+    font-size: 20px;
+}
+.forgot{
+    font-family: "Markazi";
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    position: absolute;
+    top: 87%;
+    left: 67%;
+}
+.tela-login{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0px 0px 20px 20px;
+    border-radius: 15px;
+    color: white;
+}
+.cttr-blur{
+    width: 1400px;
+    height: 1400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(https://drive.google.com/uc?export=view&id=10mDIoZCGd3IIad_XoG7wvqPR-uI1pgUe);
+    background-position: center;
+    background-size: cover;
+
+}
+.logo-csup{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.6;
+    filter: blur(2px);
+}

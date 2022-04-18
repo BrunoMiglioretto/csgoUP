@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CsUP Login</title>
+    <link rel="stylesheet" href="..\assets\css\login.css">
+
+</head>
+<body class="bg">
+    
+    <img src="https://drive.google.com/uc?export=view&id=19Wi9Mf3bCJbYZcUePwZb6C0IQpggx6-Z" alt="CsUP" class="logo-csup">
+    <div class="cttr-blur"></div>
+
+    
+    <div class="tela-login">
+        <button class="botao-login" onclick="switchTab('login')">Login</button>
+        <button class="botao-register" onclick="switchTab('register')">Register</button>
+        <br>
+
+        <div id="register">
+            <input type="text" placeholder="Email " class="input-email">
+            <br><br>
+            <input type="text" placeholder="Steam Account" class="input-steam">
+            <br><br>
+            <input type="password" placeholder="Password" class="input-new-password">
+            <br><br>
+            <input type="password" placeholder="Confirm Password" class="input-confirm">
+            <input type="image" src="https://static.vecteezy.com/system/resources/previews/001/186/943/large_2x/green-play-button-png.png" alt="Enter" class="input-enter">
+        </div>
+
+        <div id="login">
+            <input type="text" placeholder="Username" class="input-user">
+            <br><br>
+            <input type="password" placeholder="Password" class="input-pass">
+            <br><br><br>
+            <button class="botao-signin">SIGN-IN</button>
+            <div class="remember">
+                <input type="checkbox" name="Remember" id="remember">
+                <label for="Remember" class="remember-font">Remember me</label>
+            </div>
+            <button class="forgot">Forgot my password</button>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(nomeBotao){
+            let divLogin=document.getElementById("login");
+            let divRegister=document.getElementById("register");
+
+            if(nomeBotao=="login"){
+                divLogin.style.display="block";
+                divRegister.style.display="none";
+            }
+
+            if(nomeBotao=="register"){
+                divRegister.style.display="block";
+                divLogin.style.display="none";
+            }
+
+        }
+    </script>
+
+</body>
+</html>
