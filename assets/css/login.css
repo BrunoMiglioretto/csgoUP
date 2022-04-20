@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'Lalezar';
-    src: url('Lalezar-Regular.ttf') format('truetype');
+    font-family: 'NoContinue';
+    src: url('../fontes/gomarice_no_continue.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Markazi';
-    src: url('MarkaziText-VariableFont_wght.ttf') format('truetype');
+    font-family: 'ColdWarm';
+    src: url('../fontes/Cold Warm.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 *{
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
     border: none;
     outline: none;
@@ -24,7 +24,7 @@
 .botao-login{
     font-size: 35px;
     color: white;
-    font-family: 'Lalezar';
+    font-family: 'NoContinue';
     text-decoration: underline;
     font-weight: normal;
     background-color: transparent;
@@ -46,7 +46,7 @@
     width: 60%;
     font-size: 35px;
     color: white;
-    font-family: 'Lalezar';
+    font-family: 'NoContinue';
     text-decoration: underline;
     font-weight: normal;
     word-spacing: 120px;
@@ -55,16 +55,14 @@
     overflow: hidden;
     cursor: pointer;
 }
-#register{
-    display: none;
-}
 .botao-signin{
     background-color: #494949;
     border: none;
     padding: 5px;
     width: 60%;
     border-radius: 10px;
-    font-family: 'Markazi';
+    font-family: 'ColdWarm';
+    letter-spacing: 1.5px;
     font-size: 25px;
     cursor: pointer;
     
@@ -73,7 +71,63 @@
     background-color: #292929;
     transition: 0.3s ease-in-out;
 }
+.cttr-blur{
+    width: 70%;
+    height: 70%;
+    min-width:800px;
+    min-height:800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(https://drive.google.com/uc?export=view&id=10mDIoZCGd3IIad_XoG7wvqPR-uI1pgUe);
+    background-position: center;
+    background-size: cover;
+    
+}
+.forgot{
+    font-family: "Markazi";
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    position: absolute;
+    top: 86%;
+    left: 64%;
+}
+.input-confirm{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    color: white;
+}
 .input-email{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    color: white;
+}
+.input-enter{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 70%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+}
+.input-enter:hover{
+    transition: 0.3s ease-out;
+    width: 135px;
+    height: 135px;
+}
+.input-new-password{
     background: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
@@ -91,22 +145,14 @@
     padding-bottom: 5px;
     color: white;
 }
-.input-new-password{
+.input-pass{
     background: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
     font-size: 25px;
     border-bottom: 1px solid rgb(255, 255, 255);
     padding-bottom: 5px;
-    color: white;
-}
-.input-confirm{
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-    font-size: 25px;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    padding-bottom: 5px;
+    width: 90%;
     color: white;
 }
 .input-user{
@@ -119,48 +165,27 @@
     width: 90%;
     color: white;
 }
-.input-pass{
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-    font-size: 25px;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    padding-bottom: 5px;
-    width: 90%;
-    color: white;
-}
-.input-enter{
-    width: 120px;
-    height: 120px;
+.logo-csup{
+    width: 700px;
+    height: 700px;
     position: absolute;
-    top: 70%;
-    left: 85%;
+    top: 18%;
+    left: 50%;
     transform: translate(-50%,-50%);
+    opacity: 0.6;
+    filter: blur(2px);
 }
-.input-enter:hover{
-    transition: 0.3s ease-out;
-    width: 135px;
-    height: 135px;
+#register{
+    display: none;
 }
 .remember{
     font-family: 'Markazi';
     position:absolute;
     top: 79%;
-    left: 70%;
+    left: 67.5%;
 }
 .remember-font{
-    font-size: 20px;
-}
-.forgot{
-    font-family: "Markazi";
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    position: absolute;
-    top: 87%;
-    left: 67%;
+    font-size: 18px;
 }
 .tela-login{
     background-color: rgba(0, 0, 0, 0.8);
@@ -173,25 +198,5 @@
     border-radius: 15px;
     color: white;
 }
-.cttr-blur{
-    width: 1400px;
-    height: 1400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-image: url(https://drive.google.com/uc?export=view&id=10mDIoZCGd3IIad_XoG7wvqPR-uI1pgUe);
-    background-position: center;
-    background-size: cover;
 
-}
-.logo-csup{
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    top: 18%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    opacity: 0.6;
-    filter: blur(2px);
-}
+
