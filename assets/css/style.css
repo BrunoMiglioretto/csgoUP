@@ -106,26 +106,27 @@
     /*STYLE DO CARROSSEL*/
     .container-carrossel{
         height: auto;
-        display: inline-flex;
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
     }
-        .container-carrossel figure.card{
+        .container-carrossel figure#card{
             background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.223), rgba(190, 0, 0, 0.938));
-            filter: drop-shadow(0px 10px 10px rgba(0,0,0,5));
+            box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.562);
             padding: 15px;          
             border-radius: 15px;
-            transition: all 0.6s cubic-bezier(0.2, 0.84, 0.44, 1);
             gap: 20px;
             height: 180px;
         }
             
-                .container-carrossel figure.card .weapon{                
+                .container-carrossel figure#card .weapon{                
                     filter: drop-shadow(10px 10px 10px rgba(0,0,0,5));
                     height: 100px; 
                     padding: 10%;
                     padding-block-end: 0;            
                 }
             
-                .container-carrossel figure.card .legenda{
+                .container-carrossel figure#card .legenda{
                     color: white;
                     line-height: 1.6;
                     padding: 5px;
