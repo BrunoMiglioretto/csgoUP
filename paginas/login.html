@@ -11,35 +11,35 @@
 </head>
 <body class="bg">
     
-    <img src="https://drive.google.com/uc?export=view&id=19Wi9Mf3bCJbYZcUePwZb6C0IQpggx6-Z" alt="CsUP" class="logo-csup">
-    <div class="cttr-blur"></div>
+    <img src="https://drive.google.com/uc?export=view&id=19Wi9Mf3bCJbYZcUePwZb6C0IQpggx6-Z" alt="CsUP" class="logoCsup">
+    <div class="cttrBlur"></div>
 
     
-    <div class="tela-login">
-        <button class="botao-login" onclick="switchTab('login')">Login</button>
-        <button class="botao-register" onclick="switchTab('register')">Register</button>
+    <div class="telaLogin">
+        <button class="botaoLogin" onclick="switchTab('login')">Login</button>
+        <button class="botaoRegister" onclick="switchTab('register')">Register</button>
         <br>
 
         <div id="register">
-            <input type="text" placeholder="Email " class="input-email">
+            <input type="text" placeholder="Email " class="inputEmail">
             <br><br>
-            <input type="text" placeholder="Steam Account" class="input-steam">
+            <input type="text" placeholder="Steam Account" class="inputSteam">
             <br><br>
-            <input type="password" placeholder="Password" class="input-new-password">
+            <input type="password" placeholder="Password" id="inputNewPassword">
             <br><br>
-            <input type="password" placeholder="Confirm Password" class="input-confirm">
-            <input type="image" src="../assets/img/startButton.png" alt="Enter" class="input-enter">
+            <input type="password" placeholder="Confirm Password" onkeyup="recebeRegister()" id="inputConfirm">
+            <input type="image" src="../assets/img/startButton.png" alt="Enter" class="inputEnter">
         </div>
 
         <div id="login">
-            <input type="text" placeholder="Username" class="input-user">
+            <input type="text" placeholder="Username" class="inputUser">
             <br><br>
-            <input type="password" placeholder="Password" class="input-pass">
+            <input type="password" placeholder="Password" class="inputPass">
             <br><br><br>
-            <button class="botao-signin">SIGN-IN</button>
+            <button class="botaoSignin">SIGN-IN</button>
             <div class="remember">
                 <input type="checkbox" name="Remember" id="remember">
-                <label for="Remember" class="remember-font">Remember me</label>
+                <label for="Remember" class="rememberFont">Remember me</label>
             </div>
             <button class="forgot">Forgot my password</button>
         </div>

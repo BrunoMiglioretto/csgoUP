@@ -21,7 +21,7 @@
     background-image: linear-gradient(90deg, #5f8199 10%, #9A8A5D);
     background-attachment: fixed;
 }
-.botao-login{
+.botaoLogin{
     font-size: 35px;
     color: white;
     font-family: 'NoContinue';
@@ -33,16 +33,16 @@
     cursor: pointer;
     margin: 35px;
 }
-.botao-login:hover{
+.botaoLogin:hover{
     color: #838383;
     transition: 0.3s ease-in-out;
 }
-.botao-register:hover{
+.botaoRegister:hover{
     
     color: #838383;
     transition: 0.3s ease-in-out;
 }
-.botao-register{
+.botaoRegister{
     width: 60%;
     font-size: 35px;
     color: white;
@@ -55,7 +55,7 @@
     overflow: hidden;
     cursor: pointer;
 }
-.botao-signin{
+.botaoSignin{
     background-color: #494949;
     border: none;
     padding: 5px;
@@ -67,11 +67,11 @@
     cursor: pointer;
     
 }
-.botao-signin:hover{
+.botaoSignin:hover{
     background-color: #292929;
     transition: 0.3s ease-in-out;
 }
-.cttr-blur{
+.cttrBlur{
     width: 70%;
     height: 70%;
     min-width:800px;
@@ -96,7 +96,16 @@
     top: 86%;
     left: 64%;
 }
-.input-confirm{
+#inputConfirm{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    color: rgb(255, 255, 255);
+}
+.inputEmail{
     background: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
@@ -105,16 +114,7 @@
     padding-bottom: 5px;
     color: white;
 }
-.input-email{
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-    font-size: 25px;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    padding-bottom: 5px;
-    color: white;
-}
-.input-enter{
+.inputEnter{
     width: 130px;
     height: 130px;
     position: absolute;
@@ -122,12 +122,12 @@
     left: 85%;
     transform: translate(-50%,-50%);
 }
-.input-enter:hover{
+.inputEnter:hover{
     transition: 0.3s ease-out;
-    width: 135px;
-    height: 135px;
+    width: 140px;
+    height: 140px;
 }
-.input-new-password{
+#inputNewPassword{
     background: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
@@ -136,7 +136,7 @@
     padding-bottom: 5px;
     color: white;
 }
-.input-steam{
+.inputSteam{
     background: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
@@ -145,7 +145,7 @@
     padding-bottom: 5px;
     color: white;
 }
-.input-pass{
+.inputPass{
     background: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
@@ -155,7 +155,7 @@
     width: 90%;
     color: white;
 }
-.input-user{
+.inputUser{
     background: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
@@ -165,7 +165,7 @@
     width: 90%;
     color: white;
 }
-.logo-csup{
+.logoCsup{
     width: 700px;
     height: 700px;
     position: absolute;
@@ -184,10 +184,10 @@
     top: 79%;
     left: 67.5%;
 }
-.remember-font{
+.rememberFont{
     font-size: 18px;
 }
-.tela-login{
+.telaLogin{
     background-color: rgba(0, 0, 0, 0.8);
     width: 500px;
     position: absolute;
