@@ -190,7 +190,6 @@ main h1 {
     backdrop-filter: blur(20px);
     /* -webkit-backdrop-filter: blur(10px); */
     width: 1020px;
-    height: 1400px;
     margin: auto;
     margin-top: 100px; 
     gap: 20px;
