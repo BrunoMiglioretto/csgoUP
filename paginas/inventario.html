@@ -5,7 +5,6 @@
     <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x-icon">
     <title>Inventário - CSGO UP</title>
     <link href="../assets/css/style.css" rel="stylesheet"/>
-    <script src="../assets/js/login.js" defer></script>
 </head>
 <body>
     <div class="header-container">
@@ -14,19 +13,40 @@
             <ul class="header-menu">
                 <li><a href="../paginas/index.html">HOME</a></li>
                 <li><a href="../paginas/shop.html">LOJA</a></li>
-                <li><a href="#">PERFIL</a></li>
                 <li><a href="../paginas/inventario.html">INVENTARIO</a></li>
+                <li class="with-submenu">
+                    <a href="#">PERFIL</a>
+                        <ul class="submenu">
+                            <li><a href="#">Configuracoes</a></li>
+                            <li><a href="#">Depositar</a></li>
+                            <li><a href="#">Sacar</a></li>
+                            <li><a href="#">Historico</a></li>
+                            <li><a href='#'>Estatisticas</a></li>
+                            <li><a href='#'>Logout</a></li>
+                        </ul>
+                </li>
             </ul>
          </nav>
         <div class="header-login-container">
             <img src="../assets/img/login-icon.png">
             <div>
-                <p class="nickname">NICKNAME</p>
-                <p class="saldo">R$9999,99</p>
+                <a href="#">
+                    <p class="nickname">NICKNAME</p>
+                    <p class="saldo">R$9999,99</p>
+                </a>
             </div>
         </div>
     </div>
     <div class="container-carrossel">
+        
+        <figure id="card" id="atual">
+            <p class="upgrade">UPGRADE</p>
+            <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
+            <div class="legenda">
+                <p class="subname">wild lotus</p>
+                <p class="price">R$715,50</p>
+            </div>
+        </figure>
         <figure id="card">
             <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
             <div class="legenda">
@@ -50,7 +70,7 @@
         </figure>
     </div>
     <main>
-        <h1>INVENTARIO</h1>
+        <h1 class="neon2">INVENTARIO</h1>
         <div class="container-rank caixa">
             <figure class="card">
                 <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK NEON REVOLUTION PNG.png">
