@@ -3,50 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>CSGO UP</title>
-    <link href="../assets/css/header.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x-icon">
 </head>
 <body>
     <div class="header-container">
-        <img class="header-logo" src="../assets/img/LOGOCSGOUP.png">
-        <ul class="header-menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="../paginas/shop.html">LOJA</a></li>
-            <li><a href="#">PERFIL</a></li>
-            <li><a href="../paginas/inventario.html">INVENTARIO</a></li>
-        </ul>
+        <img class="header-logo" src="../assets/img/LOGOCSGOUP.png" alt="CSGO UP">
+        <nav>
+            <ul class="header-menu">
+                <li><a href="../paginas/index.html">HOME</a></li>
+                <li><a href="../paginas/shop.html">LOJA</a></li>
+                <li><a href="../paginas/inventario.html">INVENTARIO</a></li>
+                <li class="with-submenu">
+                    <a href="#">PERFIL</a>
+                        <ul class="submenu">
+                            <li><a href="#">Configuracoes</a></li>
+                            <li><a href="#">Depositar</a></li>
+                            <li><a href="#">Sacar</a></li>
+                            <li><a href="#">Historico</a></li>
+                            <li><a href='#'>Estatisticas</a></li>
+                            <li><a href='#'>Logout</a></li>
+                        </ul>
+                </li>
+            </ul>
+         </nav>
         <div class="header-login-container">
             <img src="../assets/img/login-icon.png">
             <div>
-                <p class="nickname">NICKNAME</p>
-                <p class="saldo">R$ 9999,99</p>
+                <a href="#">
+                    <p class="nickname">NICKNAME</p>
+                    <p class="saldo">R$9999,99</p>
+                </a>
             </div>
         </div>
     </div>
-    <div class="carrossel-container">
-        <ul>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-            <li><img src="../assets/img/armas-inventario/SKINS CLASSIFIED/AK47 Phantom Disruptor.png"></li>
-        </ul>
+    <div class="container-carrossel">
+        
+        <figure class="card" id="atual">
+            <!-- <p class="upgrade">UPGRADE</p> -->
+            <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
+            <div class="legenda">
+                <p class="subname">wild lotus</p>
+                <p class="price">R$715,50</p>
+            </div>
+        </figure>
+        <figure class="card">
+            <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
+            <div class="legenda">
+                <p class="subname">wild lotus</p>
+                <p class="price">R$715,50</p>
+            </div>
+        </figure>
+        <figure class="card">
+            <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
+            <div class="legenda">
+                <p class="subname">wild lotus</p>
+                <p class="price">R$715,50</p>
+            </div>
+        </figure>
+        <figure class="card">
+            <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
+            <div class="legenda">
+                <p class="subname">wild lotus</p>
+                <p class="price">R$715,50</p>
+            </div>
+        </figure>
     </div>
     <main>
         <h1>APRIMORAMENTO</h1>
@@ -55,70 +76,91 @@
             <div class="caixa primaria"></div>
             <div class="caixa secundaria"></div>
         </div>
-        <div class="container-inventario">
-            <div class="lista-item pequeno caixa">
+        <div class="index">
+            <div class="container-itens caixa">
                 <div class="header">
                     <h3>MEUS ITENS</h3>
                 </div>
-                <div class="body">
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                </div>
+                <figure class="card">
+                    <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK NEON REVOLUTION PNG.png">
+                    <div class="legenda">
+                        <p class="name">AK-47</p>
+                        <p class="subname">NEON REVOLUTION</p>
+                        <p class="price">R$715,50</p>
+                    </div>
+                </figure>
+                <figure class="card">
+                    <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK NEON REVOLUTION PNG.png">
+                    <div class="legenda">
+                        <p class="name">AK-47</p>
+                        <p class="subname">NEON REVOLUTION</p>
+                        <p class="price">R$715,50</p>
+                    </div>
+                </figure><figure class="card">
+                    <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK NEON REVOLUTION PNG.png">
+                    <div class="legenda">
+                        <p class="name">AK-47</p>
+                        <p class="subname">NEON REVOLUTION</p>
+                        <p class="price">R$715,50</p>
+                    </div>
+                </figure><figure class="card">
+                    <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK NEON REVOLUTION PNG.png">
+                    <div class="legenda">
+                        <p class="name">AK-47</p>
+                        <p class="subname">NEON REVOLUTION</p>
+                        <p class="price">R$715,50</p>
+                    </div>
+                </figure><figure class="card">
+                    <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK NEON REVOLUTION PNG.png">
+                    <div class="legenda">
+                        <p class="name">AK-47</p>
+                        <p class="subname">NEON REVOLUTION</p>
+                        <p class="price">R$715,50</p>
+                    </div>
+                </figure>
             </div>
-            <div class="lista-item pequeno caixa">
+            <div class="container-itens caixa">
                 <div class="header">
                     <h3>APRIMORAMENTO</h3>
                     <p class="ordenador">PRECO</p>
                 </div>
-                <div class="body">
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                    <div><img src="../assets/img/armas-inventario/SKINS RESTRICTED/AK47 SLATE.png"></div>
-                </div>
+                <figure class="card">
+                    <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK NEON REVOLUTION PNG.png">
+                    <div class="legenda">
+                        <p class="name">AK-47</p>
+                        <p class="subname">NEON REVOLUTION</p>
+                        <p class="price">R$715,50</p>
+                    </div>
+                </figure>
+                <figure class="card">
+                    <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK NEON REVOLUTION PNG.png">
+                    <div class="legenda">
+                        <p class="name">AK-47</p>
+                        <p class="subname">NEON REVOLUTION</p>
+                        <p class="price">R$715,50</p>
+                    </div>
+                </figure><figure class="card">
+                    <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK NEON REVOLUTION PNG.png">
+                    <div class="legenda">
+                        <p class="name">AK-47</p>
+                        <p class="subname">NEON REVOLUTION</p>
+                        <p class="price">R$715,50</p>
+                    </div>
+                </figure><figure class="card">
+                    <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK NEON REVOLUTION PNG.png">
+                    <div class="legenda">
+                        <p class="name">AK-47</p>
+                        <p class="subname">NEON REVOLUTION</p>
+                        <p class="price">R$715,50</p>
+                    </div>
+                </figure><figure class="card">
+                    <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK NEON REVOLUTION PNG.png">
+                    <div class="legenda">
+                        <p class="name">AK-47</p>
+                        <p class="subname">NEON REVOLUTION</p>
+                        <p class="price">R$715,50</p>
+                    </div>
+                </figure>
             </div>
         </div>
     </main>

@@ -20,6 +20,42 @@
         }
     }
 
+    /* "CARDS" */
+
+    figure.card:hover{
+        transform:scale(1.03,1.03);
+    }
+    
+    figure.card{
+        background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(190, 0, 0, 0.938));
+        filter: drop-shadow(0px 10px 10px rgba(0,0,0,5));
+        padding: 7px;
+        border-radius: 15px;
+        transition: all 0.6s cubic-bezier(0.2, 0.84, 0.44, 1);
+        height: 220px;
+    }
+        figure.card .weapon{                
+            filter: drop-shadow(10px 10px 10px rgba(0,0,0,5));
+            height: 100px;
+            padding: 10%;
+            padding-block-end: 0;            
+        }
+        figure.card .legenda{
+            color: white;
+            line-height: 1.6;
+            padding: 5px;
+            filter: drop-shadow(10px 10px 10px rgba(0,0,0,5));
+            letter-spacing: 2px;
+            align-self: flex-end;
+        }
+
+        .caixa {
+            border: 0,5px solid rgba(49, 49, 49, 0.644);
+            box-shadow: 0 0 4px 4px rgb(0, 0, 0);
+            border-radius: 25px;
+            backdrop-filter: blur(20px);
+        }
+
     /*STYLE BACKGROUND*/
     body {
         background-color: black;
@@ -175,31 +211,9 @@
             margin-left: 0;
             transition: all 2s;
         }
-        .container-carrossel figure#card{
-            background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.223), rgba(190, 0, 0, 0.938));
-            box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.562);
-            padding: 15px;          
-            border-radius: 15px;
-            gap: 20px;
+        .container-carrossel figure.card{
             height: 180px;
         }
-            
-                .container-carrossel figure#card .weapon{                
-                    filter: drop-shadow(10px 10px 10px rgba(0,0,0,5));
-                    height: 100px; 
-                    padding: 10%;
-                    padding-block-end: 0;            
-                }
-            
-                .container-carrossel figure#card .legenda{
-                    color: white;
-                    line-height: 1.6;
-                    padding: 5px;
-                    filter: drop-shadow(10px 10px 10px rgba(0,0,0,5));
-                    letter-spacing: 2px;
-                    align-self: flex-end;
-                }
-
 
         /*TITLE*/
             h1 {
@@ -213,23 +227,82 @@
             }
 
 /*STYLE DO INDEX*/
+.container-roleta{
+    align-items: center;
+    margin: 0 auto;
+    display:flex;
+    height: 700px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.primaria{
+    backdrop-filter: blur(50px);
+    height: 700px;
+    width: 700px;
+}
+
+.secundaria{
+    backdrop-filter: blur(50px);
+    height: 500px;
+    width: 500px;
+}
+
+.index{
+    display:flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+.header h3{
+    display: inline;
+}
+
+h3, .header{
+    font-weight: normal;
+    color:#00b94b;
+    font-size: 30px;
+    text-align: center;
+    --cor-neon: rgba(0, 255, 98, 0.514);
+    animation: neon 3s alternate infinite ease-in-out;
+}
+
+/* SCROLL BAR */
+.container-itens::-webkit-scrollbar{
+    width: 0;
+}
+
+.container-itens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    /* background-color: rgbal(255,255,255,0.1); */
+    /* -webkit-backdrop-filter: blur(10px); */
+    width: auto;
+    height: 700px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px; 
+    gap: 29px;
+    padding: 50px;
+    overflow-y: scroll;
+}
+
+
+
+
+
 
 /*STYLE DO LOGIN*/
 
 /*STYLE DO INVENTARIO*/
-.caixa {
-    border: 0,5px solid rgba(49, 49, 49, 0.644);
-    box-shadow: 0 0 4px 4px rgb(0, 0, 0);
-    border-radius: 25px;
-}
+
 
 .container-rank {    
     display: flex;
     justify-content: center;
     align-items: flex-end;
     background-color: rgbal(255,255,255,0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(60px);
     width: 800px;
     height: 400px;
     margin: auto; 
@@ -244,31 +317,8 @@
 .container-rank figure.card{
     display: grid;   
     position: relative;
-    background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.223), rgba(190, 0, 0, 0.938));
-    filter: drop-shadow(0px 10px 10px rgba(0,0,0,5));
-    padding: 15px;
-    border-radius: 15px;
-    transition: all 0.6s cubic-bezier(0.2, 0.84, 0.44, 1);
-    gap: 20px;
+    gap: 20px;    
 }
-    
-        .container-rank figure.card .weapon{                
-            filter: drop-shadow(10px 10px 10px rgba(0,0,0,5));
-            height: 100px;
-            padding: 10%;
-            padding-block-end: 0;            
-        }
-    
-        .container-rank figure.card .legenda{
-            color: white;
-            line-height: 1.6;
-            padding: 5px;
-            filter: drop-shadow(10px 10px 10px rgba(0,0,0,5));
-            letter-spacing: 2px;
-            align-self: flex-end;
-        }
-        
-        
     .container-rank figure.card:nth-child(2){
         font-size: 20px;
         align-self: flex-start;
@@ -282,51 +332,27 @@
     transform:scale(1.04,1.04);
 }
 
+/* SCROLL BAR */
+.container-inventario::-webkit-scrollbar{
+    width: 0;
+}
+
 .container-inventario{
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     /* background-color: rgbal(255,255,255,0.1); */
-    backdrop-filter: blur(20px);
     /* -webkit-backdrop-filter: blur(10px); */
-    width: 1020px;
-    margin: auto;
+    width: auto;
+    height: 700px;
+    margin-left: 200px;
+    margin-right: 200px;
     margin-top: 100px; 
     gap: 29px;
     padding: 50px;
-    
+    padding-right: 0px;
+    overflow-y: scroll;
 }
-
-.container-inventario figure.card{
-    background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(190, 0, 0, 0.938));
-    filter: drop-shadow(0px 10px 10px rgba(0,0,0,5));
-    padding: 7px;
-    border-radius: 15px;
-    transition: all 0.6s cubic-bezier(0.2, 0.84, 0.44, 1);
-    height: 220px;
-}
-
-    .container-inventario figure.card .weapon{                
-        filter: drop-shadow(10px 10px 10px rgba(0,0,0,5));
-        height: 110px;
-        padding: 10PX;
-        /* padding-block-end: 0;  */           
-    }
-
-    .container-inventario figure.card .legenda{
-        color: white;
-        line-height: 1.6;
-        padding: 5px;
-        filter: drop-shadow(10px 10px 10px rgba(0,0,0,5));
-        letter-spacing: 2px;
-        align-self: flex-end;
-    }
-
-
-    .container-inventario figure.card:hover{
-        transform:scale(1.03,1.03);
-    }
-
 
 
 
