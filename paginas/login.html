@@ -7,6 +7,7 @@
     <title>CsUP Login</title>
     <link rel="stylesheet" href="..\assets\css\login.css">
 
+    <script src="../assets/js/login.js"></script>
 </head>
 <body class="bg">
     
@@ -27,7 +28,7 @@
             <input type="password" placeholder="Password" class="input-new-password">
             <br><br>
             <input type="password" placeholder="Confirm Password" class="input-confirm">
-            <input type="image" src="https://static.vecteezy.com/system/resources/previews/001/186/943/large_2x/green-play-button-png.png" alt="Enter" class="input-enter">
+            <input type="image" src="../assets/img/startButton.png" alt="Enter" class="input-enter">
         </div>
 
         <div id="login">
@@ -43,24 +44,6 @@
             <button class="forgot">Forgot my password</button>
         </div>
     </div>
-
-    <script>
-        function switchTab(nomeBotao){
-            let divLogin=document.getElementById("login");
-            let divRegister=document.getElementById("register");
-
-            if(nomeBotao=="login"){
-                divLogin.style.display="block";
-                divRegister.style.display="none";
-            }
-
-            if(nomeBotao=="register"){
-                divRegister.style.display="block";
-                divLogin.style.display="none";
-            }
-
-        }
-    </script>
 
 </body>
 </html>
