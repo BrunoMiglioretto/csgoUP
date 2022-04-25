@@ -27,11 +27,11 @@
         <h1 class="loja">LOJA</h1>
         <div class="caixaHeader">
             <ul class="selects">
-                <li >Todas</li>
-                <li >Facas</li>
-                <li >Luvas</li>
-                <li >Rifles</li>
-                <li >Pistolas</li>
+                <li onclick="switchSelects('todas')" id="todas" >Todas</li>
+                <li onclick="switchSelects('facas')" id="facas">Facas </li>
+                <li onclick="switchSelects('luvas')" id="luvas">Luvas</li>
+                <li onclick="switchSelects('rifles')" id="rifles">Rifles</li>
+                <li onclick="switchSelects('pistolas')" id="pistolas">Pistolas</li>
             </ul>
         </div>
     </div>
@@ -40,88 +40,117 @@
     </div>
     <h3>Itens Disponiveis</h3>
     <main>
-        <div class="rifles">
-            <div class="caixa">
-                <div class="body">
-                    <div><img src="./img/SKINS COVERT-20220411T221545Z-001/SKINS COVERT/M4A1-S CHANTICOS FIRE.png"></div>
-                </div>
-            </div>
-            <div class="caixa">
-                <div class="body">
-                    <div><img src="./img/SKINS COVERT-20220411T221545Z-001/SKINS COVERT/M4A4 HOWL.png"></div>
-                </div>
-            </div>
-            <div class="caixa">
-                <div class="body">
-                    <div><img src="./img/SKINS COVERT-20220411T221545Z-001/SKINS COVERT/M4A1-S HYPER BEAST.png"></div>
-                </div>
-            </div>
-            <div class="caixa">
-                <div class="body">
-                    <div><img src="./img/SKINS COVERT-20220411T221545Z-001/SKINS COVERT/AK NEON REVOLUTION.png"></div>
-                </div>
-            </div>
-            <div class="caixa">
-                <div class="body">
-                    <div><img src="./img/SKINS COVERT-20220411T221545Z-001/SKINS COVERT/M4A1-S IMMINET DANGER.png"></div>
-                </div>
-            </div>
-            <div class="caixa">
-                <div class="body">
-                    <div><img src="./img/SKINS COVERT-20220411T221545Z-001/SKINS COVERT/AWP FADE.png"></div>
-                </div>
-            </div>
-            <div class="caixa">
-                <div class="body">
-                    <div><img src="./img/SKINS COVERT-20220411T221545Z-001/SKINS COVERT/AK IMPERATRIZ.png"></div>
-                </div>
-            </div>
-            <div class="caixa">
-                <div class="body">
-                    <div><img src="./img/SKINS COVERT-20220411T221545Z-001/SKINS COVERT/AK WILD LOTUS.png"></div>
-                </div>
-            </div>
-            <div class="caixa">
-                <div class="body">
-                    <div><img src="./img/SKINS COVERT-20220411T221545Z-001/SKINS COVERT/AK MAN.png"></div>
-                </div>
-            </div>
-            <div class="caixa">
-                <div class="body">
-                    <div><img src="./img/SKINS COVERT-20220411T221545Z-001/SKINS COVERT/AWP DESERT HYDRA.png"></div>
-                </div>
-            </div>
-            <div class="caixa">
-                <div class="body">
-                    <div><img src="./img/SKINS COVERT-20220411T221545Z-001/SKINS COVERT/SSG 08 DRAGONFIRE.png"></div>
-                </div>
+       <!-- RIFLES -->
+        <div class="caixa rifles" >
+            <div class="body">
+                <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
             </div>
         </div>
+        <div class="caixa rifles">
+            <div class="body">
+                <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK NEON REVOLUTION.png"></div>
+            </div>
+        </div>
+        <div class="caixa rifles">
+            <div class="body">
+                <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK WILD LOTUS.png"></div>
+            </div>
+        </div>
+        <div class="caixa rifles">
+            <div class="body">
+                <div><img src="../assets/img/armas-inventario/SKINS COVERT/AWP DESERT HYDRA.png"></div>
+            </div>
+        </div>
+        <div class="caixa rifles">
+            <div class="body">
+                <div><img src="../assets/img/armas-inventario/SKINS COVERT/AWP FADE.png"></div>
+            </div>
+        </div>
+        <div class="caixa rifles">
+            <div class="body">
+                <div><img src="../assets/img/armas-inventario/SKINS COVERT/M4A1-S IMMINET DANGER.png"></div>
+            </div>
+        </div>
+        <div class="caixa rifles">
+            <div class="body">
+                <div><img src="../assets/img/armas-inventario/SKINS COVERT/M4A1-S CHANTICOS FIRE.png"></div>
+            </div>
+        </div>
+        <div class="caixa rifles">
+            <div class="body">
+                <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
+            </div>
+        </div>
+        <div class="caixa rifles">
+            <div class="body">
+                <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
+            </div>
+        </div>
+        <div class="caixa rifles">
+            <div class="body">
+                <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
+            </div>
+        </div>
+        <div class="caixa rifles">
+            <div class="body">
+                <div><img src="../assets/img/armas-inventario/SKINS COVERT/AK IMPERATRIZ.png"></div>
+            </div>
+        </div>
+        <!-- PISTOLAS -->
+            <div class="caixa pistolas">
+                <div class="body">
+                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/GLOCK18 WASTELAND.png"></div>
+                </div>
+            </div>
+            <div class="caixa pistolas">
+                <div class="body">
+                    <div><img src="../assets/img/armas-inventario/SKINS COVERT/USPS NEO NOIR.png"></div>
+                </div>
+            </div>
+        <!-- LUVAS -->
 
-        <div class="pistolas">
-            <div class="caixa">
-                <div class="body">
-                    <div><img src="./img/SKINS COVERT-20220411T221545Z-001/SKINS COVERT/GLOCK18 WASTELAND.png"></div>
-                </div>
-            </div>
-            <div class="caixa">
-                <div class="body">
-                    <div><img src="./img/SKINS COVERT-20220411T221545Z-001/SKINS COVERT/USPS NEO NOIR.png"></div>
-                </div>
-            </div>
-            <div class="caixa">
-                <div class="body">
-                    <div><img src=""></div>
-                </div>
+        
+        <div class="caixa luvas">
+            <div class="body">
+                <div><img src="../assets/img/armas-inventario/FACAS E LUVAS/DRIVER GLOVES IMPERIAL PLAID.png"></div>
             </div>
         </div>
-        <div class="luvas">
-
+        
+        <!-- FACAS -->
+        
+        <div class="caixa facas">
+            <div class="body">
+                <div><img src="../assets/img/armas-inventario/FACAS E LUVAS/KARAMBIT AUTOTRONIC.png"></div>
+            </div>
         </div>
-        <div class="facas">
-
-        </div>
+          
 
     </main>
 </body>
+
+
+<script>
+    function switchSelects(selectEscolhido){
+        let facas = document.getElementById("facas")
+        let pistolas = document.getElementById("pistolas")
+        let luvas = document.getElementById("luvas")
+        let rifles = document.getElementById("rifles")
+        console.log(selectEscolhido)
+        console.log("=============")
+        if(selectEscolhido == "facas"){
+            let divFacas = document.getElementsByClassName("facas")
+            console.log(divFacas)
+            divFacas.style.display ="block"
+        }else{
+            let divPistolas = document.getElementsByClassName("pistolas")
+            divPistolas.style.display="none"
+            let divluvas = document.getElementsByClassName("luvas")
+            divLuvas.style.display="none"
+            let divRifles = document.getElementsByClassName("rifles")
+            divRifles.style.display="none"
+            console.log("entrou aqui 2")
+        }
+    }
+
+</script>
 </html>
