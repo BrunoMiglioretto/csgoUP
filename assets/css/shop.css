@@ -62,23 +62,9 @@ main{
     margin: 20px;
 }
 
-.rifles{
-    display: flex;
-    flex-wrap: wrap;
-}
-.pistolas{
-    display: flex;
-    flex-wrap: wrap;
-}
-.luvas {
-    display: flex;
-    flex-wrap: wrap;
-}
-.facas{
-    display: flex;
-    flex-wrap: wrap;
-}
 .caixa .body{
+    display: flex;
+    flex-wrap: wrap;
     z-index: 0;
     background-color: rgba(255, 3, 247, 0.323);
     width: 200px;

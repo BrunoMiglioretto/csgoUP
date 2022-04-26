@@ -1,3 +1,4 @@
+/*SCRIPT LOGIN*/
 function switchTab(nomeBotao){
     let divLogin=document.getElementById("login");
     let divRegister=document.getElementById("register");
