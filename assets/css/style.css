@@ -255,7 +255,6 @@
     margin: 0 auto; */
     justify-content: start;
     gap: 100px;
-
 }
 
 .index .header{
@@ -350,5 +349,55 @@ h3, .header{
 
 
 /*STYLE DO SHOP*/
+.header-shop{
+    align-items: flex-end;
+    /* grid-gap: 55px; */
+    padding-top: 10px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 30px;
+}
+    .header-shop .loja{
+        padding: 30px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .header-shop .caixaHeader{
+        display: flex;
+        justify-content: center;
+    }
 
+    .header-shop .selects{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        font-size: 30px;
+        gap: 50px;
+        border-radius: 1px;
+        height: 30px;
+        width: 1250px;
+        padding-bottom: 15px;
+    }
+    
+    .header-shop .selects li{
+        justify-content: center;
+        margin: 10px;
+        width: 60px;
+        height: 20px;
+        
+    }
+
+    .header-shop .selects li a{
+        padding: 0 20px;
+        text-decoration: none;
+        color: rgb(116, 116, 116);
+        transition: all 0.4s cubic-bezier(0.2, 0.84, 0.44, 1);
+    }
+
+    .header-shop .selects li a:hover{
+        color: #FFF;
+        border-radius: 5px;
+        background: #ffffff52;
+    }
 /*STYLE DO PERFIL*/
