@@ -20,6 +20,11 @@
         }
     }
 
+    .page-wrapper {
+        max-width: 1280px;
+        margin: auto;
+        padding: 0 40px;
+    }
     /* "CARDS" */
 
     figure.card:hover{
@@ -74,16 +79,15 @@
         .header-container { 
             display: grid;
             align-items: flex-end;
-            grid-gap: 150px;
             grid-template-columns: repeat(3, 1fr);
             padding-top: 50px;
             padding-bottom: 15px;
-            margin: 0 180px;
         }
 
             .header-container .header-logo {
-                height: 150px;
+                height: 70px;
                 transition: all 0.6s cubic-bezier(0.2, 0.84, 0.44, 1);
+                padding-bottom: 5px;
             }
             .header-container .header-logo:hover{
                 transform:scale(1.01,1.01);
@@ -95,15 +99,13 @@
             }
         
             ul.header-menu > li a{
+                padding: 0 10px;
                 font-size: 30px;
-                padding: 0 20px;
                 letter-spacing: 2px;
                 color: #777;
                 text-decoration: none;
-                transition: all 0.4s cubic-bezier(0.2, 0.84, 0.44, 1);
-                list-style: none;
-                position: relative;
                 text-align: center;
+                transition: all 0.4s cubic-bezier(0.2, 0.84, 0.44, 1);
             }
             
             ul.header-menu li a:hover{
@@ -151,6 +153,7 @@
                 align-items: center;
                 align-self: center;
                 justify-self: end;
+                padding-bottom: 5px;
             }
             .header-container .header-login-container a{
                 text-decoration: none;
