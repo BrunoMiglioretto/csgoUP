@@ -287,6 +287,13 @@
     cursor: pointer;
 }
 
+.lista-inventarios {
+    display: flex;
+}
+
+.lista-inventarios .caixa {
+    width: 40%;
+}
 .meus-itens{
     margin-right: 10px;
 }
