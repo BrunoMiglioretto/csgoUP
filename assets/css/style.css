@@ -44,7 +44,7 @@
             padding: 10PX;
             padding-block-end: 0;            
         }
-        figure.card .legenda{
+        figure.card .legenda, figure.big-card .legenda{
             color: white;
             line-height: 1.6;
             padding: 5px;
@@ -233,6 +233,33 @@
     backdrop-filter: blur(50px);
     height: 400px;
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.skin-jogador {
+    background-color: rgb(72, 74, 37);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.skin-loja {
+    background-color: rgb(43, 59, 56);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.skin-jogador img, .skin-loja img {
+    width: 280px;
+    margin: auto;
+}
+
+.skin-jogador p, .skin-loja p {
+    color: #fff;
+    font-size: 25px;
 }
 
 .index{
