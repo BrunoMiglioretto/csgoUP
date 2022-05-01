@@ -1,25 +1,24 @@
-export function instanciarSkin(nome, valor, descricao, imagem) {
-    const skin = {};
-    skin.nome = nome;
-    skin.valor = valor;
-    skin.descricao = descricao;
-    skin.imagem = imagem;
-    skin.gerarHTML = gerarHTML;
+export class skin {
+    constructor(nome, valor, descricao, imagem) {
+        const skin = {};
+        this.nome = nome;
+        this.valor = valor;
+        this.descricao = descricao;
+        this.imagem = imagem;
+    }
     
-    return skin;
-
-    function gerarHTML() {
+    gerarHTML() {
         const skinNome = document.createElement("p");
         skinNome.classList.add("name");
-        skinNome.appendChild(document.createTextNode(skin.nome));
+        skinNome.appendChild(document.createTextNode(this.nome));
 
         const skinSubnome = document.createElement("p");
         skinSubnome.classList.add("subname");
-        skinSubnome.appendChild(document.createTextNode(skin.descricao));
+        skinSubnome.appendChild(document.createTextNode(this.descricao));
 
         const skinPreco = document.createElement("p");
         skinPreco.classList.add("preci");
-        skinPreco.append(document.createTextNode(skin.valor));
+        skinPreco.append(document.createTextNode(this.valor));
 
         const legendaContainer = document.createElement("div");
         legendaContainer.classList.add("legenda");
@@ -29,7 +28,7 @@ export function instanciarSkin(nome, valor, descricao, imagem) {
 
         const imagem = document.createElement("img");
         imagem.classList.add("weapon");
-        imagem.src = skin.imagem;
+        imagem.src = this.imagem;
 
         const cardContainer = document.createElement("figure");
         cardContainer.classList.add("card");

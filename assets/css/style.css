@@ -37,7 +37,6 @@
         padding: 7px;
         border-radius: 15px;
         transition: all 0.6s cubic-bezier(0.2, 0.84, 0.44, 1);
-        height: 220px;
     }
         figure.card .weapon{                
             filter: drop-shadow(10px 10px 10px rgba(0,0,0,5));
@@ -191,43 +190,27 @@
 
     /*STYLE DO CARROSSEL*/
     .container-carrossel{
-        height: auto;
-        width: 100%;
-        overflow: hidden;
+        overflow-x: scroll;
         display: flex;
         transition: transform 0.4s;
         transform: translateX(0);        
+        background: linear-gradient(-90deg, #000 0.5%, transparent 20%);
+    }
+    #atual{
+        margin-left: 0;
+        transition: all 2s;
     }
 
-    .container-carrossel:after{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        background: linear-gradient(-90deg, #000000 5%, transparent 40%);
-    }
-
-        #atual{
-            margin-left: 0;
-            transition: all 2s;
+    /*TITLE*/
+        h1 {
+            font-weight: normal;
+            color:#00b94b;
+            font-size: 60px;
+            text-align: center;
+            padding: 60px;
+            --cor-neon: rgba(0, 255, 98, 0.514);
+            animation: neon 3s alternate infinite ease-in-out;
         }
-        .container-carrossel figure.card{
-            height: 180px;
-        }
-
-        /*TITLE*/
-            h1 {
-                font-weight: normal;
-                color:#00b94b;
-                font-size: 60px;
-                text-align: center;
-                padding: 60px;
-                --cor-neon: rgba(0, 255, 98, 0.514);
-                animation: neon 3s alternate infinite ease-in-out;
-            }
 
 /*STYLE DO INDEX*/
 .container-roleta{
