@@ -192,7 +192,7 @@
     /*STYLE DO CARROSSEL*/
     .container-carrossel{
         height: auto;
-        width: 500px;
+        width: 100%;
         overflow: hidden;
         display: flex;
         transition: transform 0.4s;
