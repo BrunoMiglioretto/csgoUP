@@ -287,21 +287,6 @@
     cursor: pointer;
 }
 
-.index{
-    display:flex;
-    justify-content: start;
-    gap: 100px;
-}
-
-.index .header{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    margin: 50px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
 .meus-itens{
     margin-right: 10px;
 }
