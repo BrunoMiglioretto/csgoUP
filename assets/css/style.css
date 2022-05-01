@@ -212,7 +212,6 @@
             animation: neon 3s alternate infinite ease-in-out;
         }
 
-/*STYLE DO INDEX*/
 .container-roleta{
     flex-wrap: wrap;
     align-items: center;
@@ -262,10 +261,34 @@
     font-size: 25px;
 }
 
+.botao-roleta-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.botao-roleta-principal button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(191, 191, 0);
+    border-radius: 50%;
+    font-size: 60px;
+    border: 0;
+    font-family: url(../fontes/Cold\ Warm.otf);
+    font-family: myFirstFont;
+    --cor-neon: rgb(0, 255, 98);
+    animation: neon 3s alternate infinite ease-in-out;
+    cursor: pointer;
+}
+
 .index{
     display:flex;
-    /* align-items: center;
-    margin: 0 auto; */
     justify-content: start;
     gap: 100px;
 }
