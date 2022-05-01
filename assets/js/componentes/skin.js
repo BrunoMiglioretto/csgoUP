@@ -61,7 +61,7 @@ export class skin {
         imagem.classList.add("weapon");
         imagem.src = this.imagem;
 
-        const container = document.createElement("div");
+        const container = document.createElement("figure");
         container.classList.add("big-card")
         container.classList.add("skin-jogador")
         container.append(imagem);
