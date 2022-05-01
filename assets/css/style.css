@@ -361,17 +361,22 @@ h3, .header{
 }
 
 .container-inventario{
+    height: 700px;
+    margin-top: 100px; 
+    padding: 50px;
+}
+
+.container-inventario .header {
+    display: flex;
+    justify-content: space-between;
+}
+.container-inventario .body {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    height: 700px;
-    margin: auto;
-    margin-top: 100px; 
     gap: 29px;
-    padding: 50px;
     overflow-y: scroll;
 }
-
 
 
 
