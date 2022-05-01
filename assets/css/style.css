@@ -57,7 +57,7 @@
         border: 0,5px solid rgba(49, 49, 49, 0.644);
         box-shadow: 0 0 4px 4px rgb(0, 0, 0);
         border-radius: 25px;
-        backdrop-filter: blur(20px);
+        background-color: #242424e0;
     }
 
     /*STYLE BACKGROUND*/
@@ -207,7 +207,7 @@
             color:#00b94b;
             font-size: 60px;
             text-align: center;
-            padding: 60px;
+            padding: 50px;
             --cor-neon: rgba(0, 255, 98, 0.514);
             animation: neon 3s alternate infinite ease-in-out;
         }
@@ -218,21 +218,21 @@
     align-items: center;
     margin: 0 auto;
     display:flex;
-    height: 700px;
     margin-top: 20px;
     justify-content: center;
 }
 
 .primaria{
+    z-index: 1;
     backdrop-filter: blur(50px);
-    height: 700px;
-    width: 700px;
+    height: 500px;
+    width: 500px;
 }
 
 .secundaria{
     backdrop-filter: blur(50px);
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
 }
 
 .index{
