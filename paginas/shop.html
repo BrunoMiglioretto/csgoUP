@@ -8,15 +8,16 @@
     <title>Inventário - CSGO UP</title>
 </head>
 <body>
-    <div class="header-container">
-        <img class="header-logo" src="../assets/img/LOGOCSGOUP.png" alt="CSGO UP">
-        <nav>
-            <ul class="header-menu">
-                <li><a href="../paginas/index.html">HOME</a></li>
-                <li><a href="../paginas/shop.html">LOJA</a></li>
-                <li><a href="../paginas/inventario.html">INVENTARIO</a></li>
-                <li class="with-submenu">
-                    <a href="#">PERFIL</a>
+    <div class="page-wrapper">
+        <div class="header-container">
+            <img class="header-logo" src="../assets/img/LOGOCSGOUP.png" alt="CSGO UP">
+            <nav>
+                <ul class="header-menu">
+                    <li><a href="../paginas/index.html">HOME</a></li>
+                    <li><a href="../paginas/shop.html">LOJA</a></li>
+                    <li><a href="../paginas/inventario.html">INVENTARIO</a></li>
+                    <li class="with-submenu">
+                        <a href="#">PERFIL</a>
                         <ul class="submenu">
                             <li><a href="#">Configuracoes</a></li>
                             <li><a href="#">Depositar</a></li>
@@ -25,211 +26,192 @@
                             <li><a href='#'>Estatisticas</a></li>
                             <li><a href='#'>Logout</a></li>
                         </ul>
-                </li>
-            </ul>
-         </nav>
-        <div class="header-login-container">
-            <img src="../assets/img/login-icon.png">
-            <div>
-                <a href="#">
-                    <p class="nickname">NICKNAME</p>
-                    <p class="saldo">R$9999,99</p>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="container-carrossel">        
-        <figure class="card" id="atual">
-            <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
-            <div class="legenda">
-                <p class="subname">wild lotus</p>
-                <p class="price">R$715,50</p>
-            </div>
-        </figure>
-        <figure class="card">
-            <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
-            <div class="legenda">
-                <p class="subname">wild lotus</p>
-                <p class="price">R$715,50</p>
-            </div>
-        </figure>
-        <figure class="card">
-            <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
-            <div class="legenda">
-                <p class="subname">wild lotus</p>
-                <p class="price">R$715,50</p>
-            </div>
-        </figure>
-        <figure class="card">
-            <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
-            <div class="legenda">
-                <p class="subname">wild lotus</p>
-                <p class="price">R$715,50</p>
-            </div>
-        </figure>
-    </div>
-    <main>
-        <div class="header-shop">
-            <h1 class="loja">LOJA</h1>
-            <div class="caixaHeader">
-                <ul class="selects">
-                    <li onclick="switchSelects('todas')" id="todas" ><a href="#">Todas</a> </li>
-                    <li onclick="switchSelects('facas')" id="facas"><a href="#">Facas</a></li>
-                    <li onclick="switchSelects('luvas')" id="luvas"><a href="#">Luvas</a></li>
-                    <li onclick="switchSelects('rifles')" id="rifles"><a href="#">Rifles</a></li>
-                    <li onclick="switchSelects('pistolas')" id="pistolas"><a href="#">Pistolas</a></li>
+                    </li>
                 </ul>
+            </nav>
+            <div class="header-login-container">
+                <img src="../assets/img/login-icon.png">
+                <div>
+                    <a href="#">
+                        <p class="nickname">NICKNAME</p>
+                        <p class="saldo">R$9999,99</p>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class = "headerShop">
-            
-        </div>
-        <h3>Itens Disponiveis</h3>
-        <div class="container-inventario caixa">
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
+    </div>
+
+    <div id="carrossel" class="container-carrossel"></div>
+
+
+    <main>
+        <div class="page-wrapper">
+            <div class="header-shop">
+                <h1 class="loja">LOJA</h1>
+                <div class="caixaHeader">
+                    <ul class="selects">
+                        <li onclick="switchSelects('todas')" id="todas" ><a href="#">Todas</a> </li>
+                        <li onclick="switchSelects('facas')" id="facas"><a href="#">Facas</a></li>
+                        <li onclick="switchSelects('luvas')" id="luvas"><a href="#">Luvas</a></li>
+                        <li onclick="switchSelects('rifles')" id="rifles"><a href="#">Rifles</a></li>
+                        <li onclick="switchSelects('pistolas')" id="pistolas"><a href="#">Pistolas</a></li>
+                    </ul>
                 </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
+            </div>
+            <div class = "headerShop">
+                
+            </div>
+            <div class="container-inventario caixa">
+                <div class="header">
+                    <h3>Itens Disponiveis</h3>
                 </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
+                <div class="body">
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
+                        <div class="legenda">
+                            <p class="name">AK-47</p>
+                            <p class="subname">wild lotus</p>
+                            <p class="price">R$715,50</p>
+                        </div>
+                    </figure>
                 </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="weapon" src="../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png">
-                <div class="legenda">
-                    <p class="name">AK-47</p>
-                    <p class="subname">wild lotus</p>
-                    <p class="price">R$715,50</p>
-                </div>
-            </figure>
+            </div>   
         </div>
     </main>
 </body>
@@ -259,4 +241,5 @@
     }
 
 </script>
+<script type="module" src="../assets/js/main.js"></script>
 </html>

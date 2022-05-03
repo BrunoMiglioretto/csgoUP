@@ -20,19 +20,23 @@
         }
     }
 
+    .page-wrapper {
+        max-width: 1500px;
+        margin: auto;
+        padding: 0 40px;
+    }
     /* "CARDS" */
 
-    figure.card:hover{
+    figure.card:hover, figure.big-card:hover{
         transform:scale(1.03,1.03);
     }
     
-    figure.card{
+    figure.card, figure.big-card{
         background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(190, 0, 0, 0.938));
         filter: drop-shadow(0px 10px 10px rgba(0,0,0,5));
         padding: 7px;
         border-radius: 15px;
         transition: all 0.6s cubic-bezier(0.2, 0.84, 0.44, 1);
-        height: 220px;
     }
         figure.card .weapon{                
             filter: drop-shadow(10px 10px 10px rgba(0,0,0,5));
@@ -40,7 +44,7 @@
             padding: 10PX;
             padding-block-end: 0;            
         }
-        figure.card .legenda{
+        figure.card .legenda, figure.big-card .legenda{
             color: white;
             line-height: 1.6;
             padding: 5px;
@@ -53,7 +57,7 @@
         border: 0,5px solid rgba(49, 49, 49, 0.644);
         box-shadow: 0 0 4px 4px rgb(0, 0, 0);
         border-radius: 25px;
-        backdrop-filter: blur(20px);
+        background-color: #242424e0;
     }
 
     /*STYLE BACKGROUND*/
@@ -74,16 +78,15 @@
         .header-container { 
             display: grid;
             align-items: flex-end;
-            grid-gap: 150px;
             grid-template-columns: repeat(3, 1fr);
             padding-top: 50px;
             padding-bottom: 15px;
-            margin: 0 180px;
         }
 
             .header-container .header-logo {
-                height: 150px;
+                height: 70px;
                 transition: all 0.6s cubic-bezier(0.2, 0.84, 0.44, 1);
+                padding-bottom: 5px;
             }
             .header-container .header-logo:hover{
                 transform:scale(1.01,1.01);
@@ -95,15 +98,13 @@
             }
         
             ul.header-menu > li a{
+                padding: 0 10px;
                 font-size: 30px;
-                padding: 0 20px;
                 letter-spacing: 2px;
                 color: #777;
                 text-decoration: none;
-                transition: all 0.4s cubic-bezier(0.2, 0.84, 0.44, 1);
-                list-style: none;
-                position: relative;
                 text-align: center;
+                transition: all 0.4s cubic-bezier(0.2, 0.84, 0.44, 1);
             }
             
             ul.header-menu li a:hover{
@@ -151,6 +152,7 @@
                 align-items: center;
                 align-self: center;
                 justify-self: end;
+                padding-bottom: 5px;
             }
             .header-container .header-login-container a{
                 text-decoration: none;
@@ -188,84 +190,110 @@
 
     /*STYLE DO CARROSSEL*/
     .container-carrossel{
-        height: auto;
-        width: 500px;
-        overflow: hidden;
+        overflow-x: scroll;
         display: flex;
         transition: transform 0.4s;
         transform: translateX(0);        
+        background: linear-gradient(-90deg, #000 0.5%, transparent 20%);
+    }
+    #atual{
+        margin-left: 0;
+        transition: all 2s;
     }
 
-    .container-carrossel:after{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        background: linear-gradient(-90deg, #000000 5%, transparent 40%);
-    }
-
-        #atual{
-            margin-left: 0;
-            transition: all 2s;
-        }
-        .container-carrossel figure.card{
-            height: 180px;
+    /*TITLE*/
+        h1 {
+            font-weight: normal;
+            color:#00b94b;
+            font-size: 60px;
+            text-align: center;
+            padding: 50px;
+            --cor-neon: rgba(0, 255, 98, 0.514);
+            animation: neon 3s alternate infinite ease-in-out;
         }
 
-        /*TITLE*/
-            h1 {
-                font-weight: normal;
-                color:#00b94b;
-                font-size: 60px;
-                text-align: center;
-                padding: 60px;
-                --cor-neon: rgba(0, 255, 98, 0.514);
-                animation: neon 3s alternate infinite ease-in-out;
-            }
-
-/*STYLE DO INDEX*/
 .container-roleta{
     flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
     display:flex;
-    height: 700px;
     margin-top: 20px;
     justify-content: center;
 }
 
 .primaria{
-    backdrop-filter: blur(50px);
-    height: 700px;
-    width: 700px;
-}
-
-.secundaria{
+    z-index: 1;
     backdrop-filter: blur(50px);
     height: 500px;
     width: 500px;
 }
 
-.index{
-    display:flex;
-    /* align-items: center;
-    margin: 0 auto; */
-    justify-content: start;
-    gap: 100px;
-}
-
-.index .header{
-    width: 100%;
-    height: 50px;
+.secundaria{
+    backdrop-filter: blur(50px);
+    height: 400px;
+    width: 400px;
     display: flex;
-    margin: 50px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
+.skin-jogador {
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.skin-loja {
+    background-color: rgb(43, 59, 56);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.skin-jogador img, .skin-loja img {
+    width: 280px;
+    margin: auto;
+}
+
+.skin-jogador p, .skin-loja p {
+    color: #fff;
+    font-size: 25px;
+}
+
+.botao-roleta-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.botao-roleta-principal button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: ;
+    border-radius: 50%;
+    font-size: 60px;
+    border: 0;
+    font-family: url(../fontes/Cold\ Warm.otf);
+    font-family: myFirstFont;
+    --cor-neon: rgb(0, 255, 98);
+    animation: neon 3s alternate infinite ease-in-out;
+    cursor: pointer;
+}
+
+.lista-inventarios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-inventarios .caixa {
+    width: 40%;
+}
 .meus-itens{
     margin-right: 10px;
 }
@@ -334,17 +362,23 @@ h3, .header{
 
 .container-inventario{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    width: 1030px;
+    flex-direction: column;
     height: 700px;
-    margin: auto;
     margin-top: 100px; 
-    gap: 29px;
     padding: 50px;
-    overflow-y: scroll;
 }
 
+.container-inventario .header {
+    display: flex;
+    justify-content: space-between;
+}
+.container-inventario .body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 29px;
+    overflow-y: scroll;
+}
 
 
 
