@@ -18,12 +18,12 @@
     font-size: 15px;
 }
 .bg{
-    background-image: linear-gradient(90deg, #5f8199 10%, #9A8A5D);
+    background-image: linear-gradient(90deg, #102535 10%, rgb(77, 64, 49));
     background-attachment: fixed;
 }
 .botaoLogin{
     font-size: 35px;
-    color: white;
+    color: rgba(173, 173, 173, 0.878);
     font-family: 'NoContinue';
     text-decoration: underline;
     font-weight: normal;
@@ -34,18 +34,18 @@
     margin: 35px;
 }
 .botaoLogin:hover{
-    color: #838383;
+    color: #cccccc;
     transition: 0.3s ease-in-out;
 }
 .botaoRegister:hover{
     
-    color: #838383;
+    color: #cccccc;
     transition: 0.3s ease-in-out;
 }
 .botaoRegister{
     width: 60%;
     font-size: 35px;
-    color: white;
+    color: rgba(173, 173, 173, 0.878);
     font-family: 'NoContinue';
     text-decoration: underline;
     font-weight: normal;
@@ -68,7 +68,7 @@
     
 }
 .botaoSignin:hover{
-    background-color: #292929;
+    background-color: #5f5f5f;
     transition: 0.3s ease-in-out;
 }
 .cttrBlur{
@@ -91,7 +91,7 @@
     border: none;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
-    color: white;
+    color: rgba(173, 173, 173, 0.878);
     position: absolute;
     top: 86%;
     left: 64%;
@@ -183,6 +183,7 @@
     position:absolute;
     top: 79%;
     left: 67.5%;
+    color: rgba(173, 173, 173, 0.878);
 }
 .rememberFont{
     font-size: 18px;
