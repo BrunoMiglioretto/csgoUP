@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Home - CSGO UP</title>
+    <title>Profile - CSGO UP</title>
     <link href="../assets/css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x-icon">
 </head>
@@ -18,7 +18,7 @@
                     <li class="with-submenu">
                         <a href="../paginas/profile-config.html">PERFIL</a>
                         <ul class="submenu">
-                            <li><a href="../paginas/profile-config.html">Configuracoes</a></li>
+                            <li><a href="#">Configuracoes</a></li>
                             <li><a href="#">Depositar</a></li>
                             <li><a href="#">Sacar</a></li>
                             <li><a href="#">Historico</a></li>
@@ -43,32 +43,34 @@
     <div id="carrossel" class="container-carrossel"></div>
     
     <main>
-        <h1>APRIMORAMENTO</h1>
-        <div class="container-roleta">
-            <div id="caixaRoletaJogador" class="caixa secundaria"></div>
-            <div id="caixaRoletaResultado" class="caixa primaria">
-                <div class="botao-roleta-principal">
-                    <button>Apostar</button>
+        <h1>CONFIGUCOES<br>DO PERFIL</h1>
+        <div class="page-wrapper">    
+            <div id="profile" class="caixa">
+                <div class="body">
+                   <div id="left">
+                        <img id="photo" src="../assets/img/profile/profile.png">
+                        <div id="data">
+                            <p class="nickname">Nickname: NICKNAME</p>
+                            <p class="saldo">R$9999,99</p>
+                            <P>ID</P>
+                        </div>
+                        <div id="reset">
+                            <p>Redefinir Senha</p>
+                            <p>Alterar Gamertag</p>
+                        </div>
+                        <div>
+                            <p>O Ultimo Login</p>
+                            <p>Entrou em:   00/00/00   00:00</p>
+                        </div>
+                   </div>
+                   <div id="right">
+
+                   </div>
+                   
                 </div>
             </div>
-            <div id="caixaRoletaLoja" class="caixa secundaria"></div>
-        </div>
-        <div class="page-wrapper">
-            <div class="lista-inventarios">
-                <div class="container-inventario caixa">
-                    <div class="header">
-                        <h3>MEUS ITENS</h3>
-                    </div>
-                    <div id="inventarioSkinJogador" class="body"></div> 
-                </div>
-                <div class="container-inventario caixa">
-                    <div class="header">
-                        <h3>APRIMORAMENTO</h3>
-                    </div>
-                    <div id="inventarioSkinLoja" class="body"></div> 
-                </div>
-            </div>
-        </div>
+       </div>
+        
     </main>
     <script type="module" src="../assets/js/main.js"></script>
 </body>
