@@ -21,7 +21,7 @@
     background-image: linear-gradient(90deg, #102535 10%, rgb(77, 64, 49));
     background-attachment: fixed;
 }
-.botaoLogin{
+#botaoLogin{
     font-size: 35px;
     color: rgba(240, 240, 240, 0.878);
     font-family: 'NoContinue';
@@ -33,16 +33,16 @@
     cursor: pointer;
     margin: 35px;
 }
-.botaoLogin:hover{
+#botaoLogin:hover{
     color: #f1f1f1;
     transition: 0.3s ease-in-out;
 }
-.botaoRegister:hover{
+#botaoRegister:hover{
     
     color: #f1f1f1;
     transition: 0.3s ease-in-out;
 }
-.botaoRegister{
+#botaoRegister{
     width: 60%;
     font-size: 35px;
     color: rgba(240, 240, 240, 0.878);
@@ -65,6 +65,7 @@
     letter-spacing: 1.5px;
     font-size: 25px;
     cursor: pointer;
+    transition: 0.5s;
     
 }
 .botaoSignin:hover{
@@ -99,10 +100,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-image: url(https://drive.google.com/uc?export=view&id=10mDIoZCGd3IIad_XoG7wvqPR-uI1pgUe);
+    background-image: url(../img/ct-tr.png);
     background-position: center;
     background-size: cover;
-    
 }
 .forgot{
     font-family: "Markazi";
@@ -140,11 +140,14 @@
     top: 70%;
     left: 85%;
     transform: translate(-50%,-50%);
+    filter: saturate(0%);
+    transition: 0.5s;
 }
 .inputEnter:hover{
-    transition: 0.3s ease-out;
+    transition: 0.5s ease-out;
     width: 140px;
     height: 140px;
+    filter: saturate(100%);
 }
 #inputNewPassword{
     background: rgba(0, 0, 0, 0);
