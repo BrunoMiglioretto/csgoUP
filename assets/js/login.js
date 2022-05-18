@@ -33,3 +33,24 @@ function recebeRegister(){
         password1.style.color = "#FFFFFF";
     }
 }
+
+function switchShow(showStatus){
+    let botaoShow=document.getElementById("showOn");
+    let botaoShowOff=document.getElementById("showOff");
+    let passwordText=document.getElementById("inputPass");
+
+    if(showStatus=="on"){
+        botaoShow.style.display="none";
+        botaoShowOff.style.display="block";
+        passwordText.type="text";
+        
+    }
+
+    if(showStatus=="off"){
+        botaoShow.style.display="block";
+        botaoShowOff.style.display="none";
+        passwordText.type="password";
+    }
+
+
+}

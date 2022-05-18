@@ -9,37 +9,41 @@
 
     <script src="../assets/js/login.js"></script>
 </head>
-<body class="bg">
+<body id="bg">
     <div class="cttrBlur"></div>
 
     
     <div class="telaLogin">
         <button id="botaoLogin" onclick="switchTab('login')">Login</button>
-        <button id="botaoRegister" onclick="switchTab('register')">Register</button>
+        <button id="botaoRegister" onclick="switchTab('register')">Registrar</button>
         <br>
 
         <div id="register">
             <input type="text" placeholder="Email " class="inputEmail">
             <br><br>
-            <input type="text" placeholder="Steam Account" class="inputSteam">
+            <input type="text" placeholder="Conta Steam" class="inputSteam">
             <br><br>
-            <input type="password" placeholder="Password" id="inputNewPassword">
+            <input type="password" placeholder="Senha" id="inputNewPassword">
             <br><br>
-            <input type="password" placeholder="Confirm Password" onkeyup="recebeRegister()" id="inputConfirm">
+            <input type="password" placeholder="Confirmar senha" onkeyup="recebeRegister()" id="inputConfirm">
             <input type="image" src="../assets/img/startButton.png" alt="Enter" class="inputEnter">
         </div>
 
         <div id="login">
-            <input type="text" placeholder="Username" class="inputUser">
+            <input type="text" placeholder="Conta Steam" class="inputUser">
             <br><br>
-            <input type="password" placeholder="Password" class="inputPass">
+            <div id="show">
+                <input type="image" src="../assets/img/show.png" alt="Show" id="showOn" onclick="switchShow('on')">
+                <input type="image" src="../assets/img/showOff.png" alt="ShowOff" id="showOff" onclick="switchShow('off')">
+            </div>
+            <input type="password" placeholder="Senha" id="inputPass">
             <br><br><br>
-            <button class="botaoSignin">SIGN-IN</button>
+            <button class="botaoSignin">Entrar</button>
             <div class="remember">
                 <input type="checkbox" name="Remember" id="remember">
-                <label for="Remember" class="rememberFont">Remember me</label>
+                <label for="Remember" class="rememberFont">Lembrar conta</label>
             </div>
-            <button class="forgot">Forgot my password</button>
+            <button class="forgot">Esqueci minha senha</button>
         </div>
     </div>
 

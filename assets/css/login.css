@@ -17,13 +17,13 @@
     outline: none;
     font-size: 15px;
 }
-.bg{
+#bg{
     background-image: linear-gradient(90deg, #102535 10%, rgb(77, 64, 49));
     background-attachment: fixed;
 }
 #botaoLogin{
     font-size: 35px;
-    color: rgba(240, 240, 240, 0.878);
+    color: #00b94b;
     font-family: 'NoContinue';
     text-decoration: underline;
     font-weight: normal;
@@ -32,20 +32,12 @@
     overflow: hidden;
     cursor: pointer;
     margin: 35px;
-}
-#botaoLogin:hover{
-    color: #f1f1f1;
-    transition: 0.3s ease-in-out;
-}
-#botaoRegister:hover{
-    
-    color: #f1f1f1;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s;
 }
 #botaoRegister{
     width: 60%;
     font-size: 35px;
-    color: rgba(240, 240, 240, 0.878);
+    color: #494949;
     font-family: 'NoContinue';
     text-decoration: underline;
     font-weight: normal;
@@ -54,6 +46,7 @@
     cursor: pointer;
     overflow: hidden;
     cursor: pointer;
+    transition: 0.5s;
 }
 .botaoSignin{
     background-color: #494949;
@@ -167,7 +160,7 @@
     padding-bottom: 5px;
     color: white;
 }
-.inputPass{
+#inputPass{
     background: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
@@ -209,6 +202,28 @@
 }
 .rememberFont{
     font-size: 18px;
+}
+#show{
+    position: absolute;
+    left: 83%;
+    top: 55%;
+    opacity: 60%;
+    transition: 0.5s;
+}
+#show:hover{
+    -webkit-filter: drop-shadow(5px 0px 2px #00b94b);
+    filter: drop-shadow(0px 0px 2px #00b94b);
+    transition: 0.5s;
+}
+#showOn{
+    width: 30px;
+    height: 30px;
+    cursor: default;
+}
+#showOff{
+    width: 30px;
+    height: 30px;
+    cursor: default;
 }
 .telaLogin{
     background-color: rgba(0, 0, 0, 0.8);
