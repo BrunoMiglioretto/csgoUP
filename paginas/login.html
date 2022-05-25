@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CsUP Login</title>
     <link rel="stylesheet" href="..\assets\css\login.css">
+    <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x-icon">
 
     <script src="../assets/js/login.js"></script>
 </head>
 <body id="bg">
+    
+    <div class="box"></div>
     <div class="cttrBlur"></div>
-
     
     <div class="telaLogin">
         <button id="botaoLogin" onclick="switchTab('login')">Login</button>
@@ -19,14 +21,14 @@
         <br>
 
         <div id="register">
-            <input type="text" placeholder="Email " class="inputEmail">
+            <input type="text" placeholder="Email " id="inputEmail">
             <br><br>
-            <input type="text" placeholder="Conta Steam" class="inputSteam">
+            <input type="text" placeholder="Conta Steam" id="inputSteam">
             <br><br>
             <input type="password" placeholder="Senha" id="inputNewPassword">
             <br><br>
-            <input type="password" placeholder="Confirmar senha" onkeyup="recebeRegister()" id="inputConfirm">
-            <input type="image" src="../assets/img/startButton.png" alt="Enter" class="inputEnter">
+            <input type="password" placeholder="Confirmar senha" onkeyup="confirmaSenha()" id="inputConfirm">
+            <input type="image" src="../assets/img/startButton.png" alt="Enter" onclick="recebeDadosRegister()" id="inputEnter">
         </div>
 
         <div id="login">

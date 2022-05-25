@@ -23,14 +23,28 @@ function switchTab(nomeBotao){
     }
 }
 
-function recebeRegister(){
+function recebeDadosRegister(){
+    var email=document.getElementById("inputEmail");
+    var steam=document.getElementById("inputSteam");
+    var senha=document.getElementById("inputNewPassword");
+
+    localStorage.email = JSON.stringify(email.value);
+    localStorage.steam = JSON.stringify(steam.value);
+    localStorage.senha = JSON.stringify(senha.value);
+}
+
+function confirmaSenha(){
     var password1=document.getElementById("inputConfirm");
     var password2=document.getElementById("inputNewPassword");
+    let botaoEnter=document.getElementById("inputEnter");
     
     if(password1.value!=password2.value){
         password1.style.color = "#FF0000";
+        botaoEnter.src="../assets/img/startButtonVermelho.png";
+        botaoEnter.style.transition="1s"
     }else{
         password1.style.color = "#FFFFFF";
+        botaoEnter.src="../assets/img/startButton.png";
     }
 }
 
