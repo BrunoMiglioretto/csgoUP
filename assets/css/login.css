@@ -20,6 +20,7 @@
 #bg{
     background-image: linear-gradient(90deg, #102535 10%, rgb(77, 64, 49));
     background-attachment: fixed;
+    overflow: hidden;
 }
 #botaoLogin{
     font-size: 35px;
@@ -125,7 +126,7 @@
     height: 70%;
     min-width:800px;
     min-height:800px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -169,14 +170,12 @@
     top: 70%;
     left: 85%;
     transform: translate(-50%,-50%);
-    filter: saturate(0%);
-    transition: 0.5s;
+    transition: 1s;
 }
 #inputEnter:hover{
-    transition: 0.5s ease-out;
+    transition: 1s ease-out;
     width: 140px;
     height: 140px;
-    filter: saturate(100%);
 }
 #inputNewPassword{
     background: rgba(0, 0, 0, 0);

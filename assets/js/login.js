@@ -40,11 +40,11 @@ function confirmaSenha(){
     
     if(password1.value!=password2.value){
         password1.style.color = "#FF0000";
-        botaoEnter.src="../assets/img/startButtonVermelho.png";
-        botaoEnter.style.transition="1s"
+        // botaoEnter.src="../assets/img/startButtonVermelho.png";
+        botaoEnter.style.filter = "hue-rotate(0deg)";
     }else{
         password1.style.color = "#FFFFFF";
-        botaoEnter.src="../assets/img/startButton.png";
+        botaoEnter.style.filter = "hue-rotate(100deg)";
     }
 }
 
