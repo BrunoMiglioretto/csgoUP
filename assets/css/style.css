@@ -468,17 +468,16 @@ h3, .header{
     font-size: 30px;
 }
 
-#left{
+.left{
     width: 400px;
-    height: 1000px;
     margin-left: 100px;
 }
-
-
 #photo{
+    align-self: center;
     width: 300px;
+    margin: auto;
     border-radius: 50%;
-    margin-top: 100px;
+    margin-top: 50px;
     filter: opacity(30%);
 
 }
@@ -496,3 +495,5 @@ h3, .header{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+
