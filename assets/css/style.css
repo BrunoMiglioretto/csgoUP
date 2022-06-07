@@ -468,17 +468,16 @@ h3, .header{
     font-size: 30px;
 }
 
-#left{
+.left{
     width: 400px;
-    height: 1000px;
     margin-left: 100px;
 }
-
-
 #photo{
+    align-self: center;
     width: 300px;
+    margin: auto;
     border-radius: 50%;
-    margin-top: 100px;
+    margin-top: 50px;
     filter: opacity(30%);
 
 }
@@ -495,4 +494,54 @@ h3, .header{
 #reset{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.perfil-container {
+    display: flex;
+}
+
+.perfil-container .caixa {
+    padding: 50px;
+}
+
+.perfil-container h2 {
+    color: rgb(214, 214, 214);
+    margin-bottom: 30px;
+}
+
+.perfil-container label {
+    color: rgb(187, 187, 187);
+}
+
+.perfil-container .email-box {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.perfil-container .input-box {
+    display: flex;
+    background-color: #FFF;
+    margin-right: 15px;
+}
+
+.perfil-container .input-box input { 
+    background-color: #FFF;
+    border: 0;
+}
+
+.perfil-container .verificao-box {
+    display: flex;
+    color: rgb(187, 187, 187);
+}
+
+.perfil-container .input-box img {
+    width: 20px;
+    margin: 10px;
+}
+
+.perfil-container .verificao-box img{
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
 }
