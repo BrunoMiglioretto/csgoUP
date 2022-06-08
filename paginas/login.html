@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CsUP Login</title>
-    <link rel="stylesheet" href="..\assets\css\login.css">
+    <link rel="stylesheet" href="..\assets\css\style.css">
     <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x-icon">
 
     <script src="../assets/js/login.js"></script>
@@ -32,15 +32,15 @@
         </div>
 
         <div id="login">
-            <input type="text" placeholder="Conta Steam" class="inputUser">
+            <input type="text" placeholder="Conta Steam" id="inputUser" onkeyup="confirmaLogin()">
             <br><br>
             <div id="show">
                 <input type="image" src="../assets/img/show.png" alt="Show" id="showOn" onclick="switchShow('on')">
                 <input type="image" src="../assets/img/showOff.png" alt="ShowOff" id="showOff" onclick="switchShow('off')">
             </div>
-            <input type="password" placeholder="Senha" id="inputPass">
+            <input type="password" placeholder="Senha" id="inputPass" onkeyup="confirmaLogin()">
             <br><br><br>
-            <button class="botaoSignin">Entrar</button>
+            <button id="botaoSignin">Entrar</button>
             <div class="remember">
                 <input type="checkbox" name="Remember" id="remember">
                 <label for="Remember" class="rememberFont">Lembrar conta</label>

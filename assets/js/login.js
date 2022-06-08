@@ -41,11 +41,28 @@ function confirmaSenha(){
     if(password1.value!=password2.value){
         password1.style.color = "#FF0000";
         // botaoEnter.src="../assets/img/startButtonVermelho.png";
+        // document.getElementById("inputEnter").className=
         botaoEnter.style.filter = "hue-rotate(0deg)";
     }else{
         password1.style.color = "#FFFFFF";
         botaoEnter.style.filter = "hue-rotate(100deg)";
     }
+}
+
+function confirmaLogin(){
+    var loginCerto = localStorage.getItem("steam");         //corrigir aqui
+    var passwordCerto = localStorage.senha;
+    var login = document.getElementById("inputUser");
+    var password = document.getElementById("inputPass");
+
+    let botaoSignin = document.getElementById("botaoSignin");
+    
+    if (login.value!=loginCerto /*|| password.value!=passwordCerto*/) {
+        botaoSignin.style.backgroundColor="#FF0000";
+    }else{
+        botaoSignin.style.backgroundColor="#00b94b";
+    }
+
 }
 
 function switchShow(showStatus){

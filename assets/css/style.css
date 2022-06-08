@@ -347,6 +347,263 @@ h3, .header{
 
 /*STYLE DO LOGIN*/
 
+@font-face {
+    font-family: 'NoContinue';
+    src: url('../fontes/gomarice_no_continue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ColdWarm';
+    src: url('../fontes/Cold Warm.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+#bg{
+    background-image: linear-gradient(90deg, #102535 10%, rgb(77, 64, 49));
+    background-attachment: fixed;
+    overflow: hidden;
+}
+#botaoLogin{
+    font-size: 35px;
+    color: #00b94b;
+    font-family: 'NoContinue';
+    text-decoration: underline;
+    font-weight: normal;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 35px;
+    transition: 0.5s;
+}
+#botaoRegister{
+    width: 60%;
+    font-size: 35px;
+    color: #494949;
+    font-family: 'NoContinue';
+    text-decoration: underline;
+    font-weight: normal;
+    word-spacing: 120px;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#botaoSignin{
+    background-color: #00b94b;
+    border: none;
+    padding: 5px;
+    width: 60%;
+    border-radius: 10px;
+    font-family: 'ColdWarm';
+    letter-spacing: 1.5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    filter: saturate(0%);
+}
+#botaoSignin:hover{
+    transition: 0.5s ease-in-out;
+    filter: saturate(100%);
+}
+.box{
+    position: relative;
+    width: 100%;
+    height: 790px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    filter: blur(8px);
+    background: #008033;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 300%;
+    background: #00b94b;
+    animation: animate 10s linear infinite;
+    
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: linear-gradient(90deg, #102535 10%, rgb(77, 64, 49));
+    border-radius: 10px;
+}
+.cttrBlur{
+    width: 70%;
+    height: 70%;
+    min-width:800px;
+    min-height:800px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(../img/ct-tr.png);
+    background-position: center;
+    background-size: cover;
+}
+.forgot{
+    font-family: "Markazi";
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(240, 240, 240, 0.878);
+    position: absolute;
+    top: 86%;
+    left: 64%;
+}
+#inputConfirm{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    color: rgb(255, 255, 255);
+}
+#inputEmail{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    color: white;
+}
+#inputEnter{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 70%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+    transition: 1s;
+}
+#inputEnter:hover{
+    transition: 1s ease-out;
+    width: 140px;
+    height: 140px;
+}
+#inputNewPassword{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    color: white;
+}
+#inputSteam{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    color: white;
+}
+#inputPass{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    width: 90%;
+    color: white;
+}
+#inputUser{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;  
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 2px;
+    width: 90%;
+    color: white;
+}
+.logoCsup{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.6;
+    filter: blur(2px);
+}
+#register{
+    display: none;
+}
+.remember{
+    font-family: 'Markazi';
+    position:absolute;
+    top: 79%;
+    left: 67.5%;
+    color: rgba(240, 240, 240, 0.878);
+}
+.rememberFont{
+    font-size: 18px;
+}
+#show{
+    position: absolute;
+    left: 83%;
+    top: 55%;
+    opacity: 60%;
+    transition: 0.5s;
+}
+#show:hover{
+    -webkit-filter: drop-shadow(5px 0px 2px #00b94b);
+    filter: drop-shadow(0px 0px 4px #00b94b);
+    transition: 0.5s;
+}
+#showOn{
+    width: 30px;
+    height: 30px;
+    cursor: default;
+}
+#showOff{
+    width: 30px;
+    height: 30px;
+    cursor: default;
+    display: none;
+}
+.telaLogin{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0px 0px 20px 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+
 /*STYLE DO INVENTARIO*/
 
 
