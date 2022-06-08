@@ -2,25 +2,86 @@
 function switchTab(nomeBotao){
     let divLogin=document.getElementById("login");
     let divRegister=document.getElementById("register");
+    let botaoLogin=document.getElementById("botaoLogin");
+    let botaoRegister=document.getElementById("botaoRegister");
+
 
     if(nomeBotao=="login"){
         divLogin.style.display="block";
         divRegister.style.display="none";
+        botaoLogin.style.color = "#00b94b";
+    }else{
+        botaoLogin.style.color = "#494949";
     }
 
     if(nomeBotao=="register"){
         divRegister.style.display="block";
         divLogin.style.display="none";
+        botaoRegister.style.color = "#00b94b";
+    }else{
+        botaoRegister.style.color = "#494949";
     }
 }
 
-function recebeRegister(){
+function recebeDadosRegister(){
+    var email=document.getElementById("inputEmail");
+    var steam=document.getElementById("inputSteam");
+    var senha=document.getElementById("inputNewPassword");
+
+    localStorage.email = JSON.stringify(email.value);
+    localStorage.steam = JSON.stringify(steam.value);
+    localStorage.senha = JSON.stringify(senha.value);
+}
+
+function confirmaSenha(){
     var password1=document.getElementById("inputConfirm");
     var password2=document.getElementById("inputNewPassword");
+    let botaoEnter=document.getElementById("inputEnter");
     
     if(password1.value!=password2.value){
         password1.style.color = "#FF0000";
+        // botaoEnter.src="../assets/img/startButtonVermelho.png";
+        // document.getElementById("inputEnter").className=
+        botaoEnter.style.filter = "hue-rotate(0deg)";
     }else{
         password1.style.color = "#FFFFFF";
+        botaoEnter.style.filter = "hue-rotate(100deg)";
     }
+}
+
+function confirmaLogin(){
+    var loginCerto = localStorage.getItem("steam");         //corrigir aqui
+    var passwordCerto = localStorage.senha;
+    var login = document.getElementById("inputUser");
+    var password = document.getElementById("inputPass");
+
+    let botaoSignin = document.getElementById("botaoSignin");
+    
+    if (login.value!=loginCerto /*|| password.value!=passwordCerto*/) {
+        botaoSignin.style.backgroundColor="#FF0000";
+    }else{
+        botaoSignin.style.backgroundColor="#00b94b";
+    }
+
+}
+
+function switchShow(showStatus){
+    let botaoShow=document.getElementById("showOn");
+    let botaoShowOff=document.getElementById("showOff");
+    let passwordText=document.getElementById("inputPass");
+
+    if(showStatus=="on"){
+        botaoShow.style.display="none";
+        botaoShowOff.style.display="block";
+        passwordText.type="text";
+        
+    }
+
+    if(showStatus=="off"){
+        botaoShow.style.display="block";
+        botaoShowOff.style.display="none";
+        passwordText.type="password";
+    }
+
+
 }

@@ -44,33 +44,64 @@
     
     <main>
         <h1>CONFIGUCOES<br>DO PERFIL</h1>
-        <div class="page-wrapper">    
+        <div class="page-wrapper perfil-container">
             <div id="profile" class="caixa">
-                <div class="body">
-                   <div id="left">
-                        <img id="photo" src="../assets/img/profile/profile.png">
-                        <div id="data">
-                            <p class="nickname">Nickname: NICKNAME</p>
-                            <p class="saldo">R$9999,99</p>
-                            <P>ID</P>
+                <img id="photo" src="../assets/img/profile/profile.png">
+                <hr style="margin: 20px 0;"size="4" NOSHADE>
+                <div class="left">                    
+                    <div id="data">
+                        <p class="nickname">Nickname: NICKNAME</p>
+                        <P class="ID"> ID: ID</P>
+                    </div>
+                </div>
+                <hr style="margin: 20px 0;"size="4" NOSHADE>
+                <div class="left"> 
+                    <div id="reset">
+                        <p>Redefinir Senha</p>
+                        <p>Alterar Gamertag</p>
+                    </div>
+                </div>
+                <hr style="margin: 20px 0;"size="4" NOSHADE>    
+                <div class="left"> 
+                    <div>
+                        <p>O Ultimo Login</p>
+                        <p>Entrou em:   00/00/00   00:00</p>
+                    </div>
+                </div>
+                <div id="right"></div>                   
+            </div>
+            <div class="caixa">
+                <h2>Email da conta</h2>
+                <div>
+                    <div>
+                        <label>Email principal</label>
+                        <div class="email-box">
+                            <div class="input-box">
+                                <input type="email">
+                                <img src="../assets/img/icone-cadeado.png">
+                            </div>
+                            <div class="verificao-box">
+                                <img src="../assets/img/icone-ok.png">
+                                <p>Verificado</p>
+                            </div>
                         </div>
-                        <div id="reset">
-                            <p>Redefinir Senha</p>
-                            <p>Alterar Gamertag</p>
+                    </div>
+                    <div>
+                        <label>Email Steam</label>
+                        <div class="email-box">
+                            <div class="input-box">
+                                <input type="email">
+                                <img src="../assets/img/icone-cadeado.png">
+                            </div>
+                            <div class="verificao-box">
+                                <img src="../assets/img/icone-aviso.png">
+                                <p>Não </p>
+                            </div>
                         </div>
-                        <div>
-                            <p>O Ultimo Login</p>
-                            <p>Entrou em:   00/00/00   00:00</p>
-                        </div>
-                   </div>
-                   <div id="right">
-
-                   </div>
-                   
+                    </div>
                 </div>
             </div>
        </div>
-        
     </main>
     <script type="module" src="../assets/js/main.js"></script>
 </body>
