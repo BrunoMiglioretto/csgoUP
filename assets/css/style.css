@@ -88,7 +88,7 @@
     .caixa {
         border: 0,5px solid rgba(49, 49, 49, 0.644);
         box-shadow: 0 0 4px 4px rgb(0, 0, 0);
-        border-radius: 25px;
+        border-radius: 10px;
         background-color: rgba(36, 36, 36, 0.878);
     }
 
@@ -715,27 +715,37 @@ h3, .header{
         border-radius: 5px;
         background: #ffffff52;
     }
-/*STYLE DO PERFIL*/
+
+/*STYLE DO PERFIL - CONFIG*/
+
 
 #profile{    
-    width: 1000px;
-    height: 1000px;
-    margin: auto;    
+    margin-left: 430px;
+    width: 600px;
+    height: 600px;  
+    color: #777;
+    font-size: 30px;
+}
+
+#bloco-email{
+    margin-left: 70px;
+    width: 450px;
+    height: 300px;  
     color: #777;
     font-size: 30px;
 }
 
 .left{
     width: 400px;
-    margin-left: 100px;
+    margin-left: 30px;
 }
 #photo{
-    align-self: center;
-    width: 300px;
+    
+    width: 200px;
     margin: auto;
     border-radius: 50%;
-    margin-top: 50px;
     filter: opacity(30%);
+    margin-left: 27%;
 
 }
 #photo:hover{
@@ -744,13 +754,13 @@ h3, .header{
 }
 
 #data{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #reset{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .perfil-container {
@@ -770,21 +780,25 @@ h3, .header{
     color: rgb(187, 187, 187);
 }
 
+.perfil-container .input-box {
+    display: flex;
+    background-color: rgb(51, 48, 48);
+    margin-right: 15px;
+}
+
 .perfil-container .email-box {
     display: flex;
     margin-bottom: 15px;
     align-items: center;
 }
 
-.perfil-container .input-box {
-    display: flex;
-    background-color: #FFF;
-    margin-right: 15px;
-}
-
 .perfil-container .input-box input { 
-    background-color: #FFF;
-    border: 0;
+    background: rgb(51, 48, 48);
+    color: #424242;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 6px 16px;
+    width: 100%;
 }
 
 .perfil-container .verificao-box {
@@ -801,4 +815,14 @@ h3, .header{
     width: 20px;
     height: 20px;
     margin-right: 7px;
+}
+
+/*STYLE DO PERFIL - DEPÓSITO*/
+
+.caixa .Deposito input{
+    visibility: visible;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 115px;
+    width: 50%;
 }

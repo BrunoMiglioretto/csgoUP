@@ -16,10 +16,10 @@
                     <li><a href="../paginas/shop.html">LOJA</a></li>
                     <li><a href="../paginas/inventario.html">INVENTARIO</a></li>
                     <li class="with-submenu">
-                        <a href="../paginas/profile-config.html">PERFIL</a>
+                        <a href="#">PERFIL</a>
                         <ul class="submenu">
-                            <li><a href="#">Configuracoes</a></li>
-                            <li><a href="#">Depositar</a></li>
+                            <li><a href="../paginas/profile-config.html">Configuracoes</a></li>
+                            <li><a href="../paginas/profile-deposito.html">Depositar</a></li>
                             <li><a href="#">Sacar</a></li>
                             <li><a href="#">Historico</a></li>
                             <li><a href='#'>Estatisticas</a></li>
@@ -43,7 +43,7 @@
     <div id="carrossel" class="container-carrossel"></div>
     
     <main>
-        <h1>CONFIGUCOES<br>DO PERFIL</h1>
+        <h1>CONFIGURACOES<br>DO PERFIL</h1>
         <div class="page-wrapper perfil-container">
             <div id="profile" class="caixa">
                 <img id="photo" src="../assets/img/profile/profile.png">
@@ -63,14 +63,14 @@
                 </div>
                 <hr style="margin: 20px 0;"size="4" NOSHADE>    
                 <div class="left"> 
-                    <div>
-                        <p>O Ultimo Login</p>
-                        <p>Entrou em:   00/00/00   00:00</p>
+                    <div id="data">
+                        <p>O Ultimo Login: </p>
+                        <p>Entrou em:   00/00/00 - 00:00</p>
                     </div>
                 </div>
                 <div id="right"></div>                   
             </div>
-            <div class="caixa">
+            <div id="bloco-email" class="caixa">
                 <h2>Email da conta</h2>
                 <div>
                     <div>
@@ -78,7 +78,7 @@
                         <div class="email-box">
                             <div class="input-box">
                                 <input type="email">
-                                <img src="../assets/img/icone-cadeado.png">
+                                <img src="../assets/img/profile/padlock-24.png">
                             </div>
                             <div class="verificao-box">
                                 <img src="../assets/img/icone-ok.png">
@@ -91,11 +91,11 @@
                         <div class="email-box">
                             <div class="input-box">
                                 <input type="email">
-                                <img src="../assets/img/icone-cadeado.png">
+                                <img src="../assets/img/profile/padlock-24.png">
                             </div>
                             <div class="verificao-box">
                                 <img src="../assets/img/icone-aviso.png">
-                                <p>Não </p>
+                                <p>Nao </p>
                             </div>
                         </div>
                     </div>
