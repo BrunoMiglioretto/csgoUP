@@ -819,10 +819,52 @@ h3, .header{
 
 /*STYLE DO PERFIL - DEPÓSITO*/
 
-.caixa .Deposito input{
+.Deposito {
     visibility: visible;
-    height: 100px;
-    margin-top: 100px;
-    margin-left: 115px;
+    height: 80px;
     width: 50%;
+    font-size: 60px;
+    color: white;
+    background: rgba(0, 0, 0, 0); 
+    border: none; 
+    outline: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+
+}
+
+.botao button {
+    margin-top: 65px;
+    margin-left: 157px;
+    background: #15b856; 
+    border-radius: 6px; 
+    padding: 25px; 
+    cursor: pointer; 
+    color: #fff; 
+    border: none; 
+    font-size: 20px;
+}
+
+.botao2 button{
+    margin-top: 40px;
+    margin-left: 135px;
+    background: #15b856; 
+    border-radius: 6px; 
+    padding: 25px; 
+    cursor: pointer; 
+    color: #fff; 
+    border: none; 
+    font-size: 20px;
+}
+
+.input-group {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.input-group-addon {
+    color: #15b856; 
+    margin-top: 13px;
+    border: none; 
+    font-size: 30px;
 }

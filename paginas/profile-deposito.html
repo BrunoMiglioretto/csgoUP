@@ -46,10 +46,21 @@
         <h1>SELECIONE UM VALOR<br>PARA O DEPOSITO</h1>
         <div class="page-wrapper perfil-container">
             <div id="profile" class="caixa">
-                <h3>Quanto voce quer adicionar?</h1>   
-                    <div class="Deposito">
-                        <input type="real">
-                    </div>             
+                <h3>Quanto voce quer adicionar?</h3>   
+                <div>
+                    <div class="input-group">
+                        <span class="input-group-addon">R$</span>
+                        <input type="text" class="Deposito" onkeypress="return event.charCode >= 48 && event.charCode <= 57"> 
+                    </div>
+                    <div>          
+                        <div class="botao">     
+                            <a class="botao" href="#"><button>Gerar boleto</button></a> 
+                        </div> 
+                        <div class="botao2">
+                            <a class="botao2" href="#"><button>Pagar com cartao</button></a> 
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
