@@ -1,7 +1,7 @@
-export class invetario {
-    constructor(id, usuarioId, listaSkin) {
+export class Inventario {
+    constructor(id, usuarioId, skinColecao) {
         this.id = id;
         this.usuarioId = usuarioId;
-        this.listaSkin = listaSkin;
+        this.skinColecao = skinColecao;
     }
 }
