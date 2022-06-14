@@ -1,6 +1,5 @@
-export class skin {
+export class Skin {
     constructor(nome, valor, descricao, imagem) {
-        const skin = {};
         this.nome = nome;
         this.valor = valor;
         this.descricao = descricao;

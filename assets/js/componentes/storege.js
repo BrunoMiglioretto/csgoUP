@@ -1,12 +1,17 @@
-export class storege{
-    constructor(entidade){
+export class Storage {
+    constructor(entidade, tipoStorage = "local"){
         this.entidade = entidade;
-        this.localStorege = window.localStorage;
+
+        if (tipoStorage == "local")
+            this.webStorage = window.localStorage;
+        else if (tipoStorage == "session")
+            this.webStorage = window.sessionStorage;
+        else
+            throw "Tipo de Web Storage inválida";
     }
 
-
     salvar(objeto) {
-        let listaEntidade = this.localStorege.getItem(this.entidade);
+        let listaEntidade = this.webStorage.getItem(this.entidade);
         let listaEntidadeJSON = JSON.parse(listaEntidade);
         if (listaEntidadeJSON == undefined) {
             listaEntidadeJSON = [];
@@ -16,7 +21,7 @@ export class storege{
         }
         const objetoJson = JSON.stringify(objeto);
         listaEntidadeJSON.push(objetoJson);
-        this.localStorege.setItem(this.entidade,JSON.stringify(listaEntidadeJSON));
+        this.webStorage.setItem(this.entidade,JSON.stringify(listaEntidadeJSON));
         return objetoJson;
     }
 
@@ -25,7 +30,7 @@ export class storege{
     }
 
     buscarLista(){
-        let listaEntidade = this.localStorege.getItem(this.entidade);
+        let listaEntidade = this.webStorage.getItem(this.entidade);
         let listaEntidadeJSON = JSON.parse(listaEntidade);
         if (listaEntidadeJSON == undefined) {
             listaEntidadeJSON = [];
@@ -39,7 +44,7 @@ export class storege{
     }
 
     remover(id){
-        let listaEntidade = this.localStorege.getItem(this.entidade);
+        let listaEntidade = this.webStorage.getItem(this.entidade);
         let listaEntidadeJSON = JSON.parse(listaEntidade);
         if (listaEntidadeJSON == undefined) {
             listaEntidadeJSON = [];
@@ -50,9 +55,13 @@ export class storege{
             listaEntidadeJSON = listaEntidadeJSON.map((elemento) => typeof(elemento) == "string" ? JSON.parse(elemento) : elemento);
         }
         const listaAtualizada = listaEntidadeJSON.filter((elemento) => elemento.id != id);
-        this.localStorege.setItem(this.entidade, JSON.stringify(listaAtualizada));
+        this.webStorage.setItem(this.entidade, JSON.stringify(listaAtualizada));
     }
+}
 
-    
-
+export class AdminStorage extends Storage {
+    resetStorage() {
+        const storage = new Storage();
+        storage.webStorage.clear();
+    }
 }
