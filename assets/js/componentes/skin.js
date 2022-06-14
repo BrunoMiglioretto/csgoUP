@@ -1,5 +1,6 @@
 export class Skin {
-    constructor(nome, valor, descricao, imagem) {
+    constructor(id, nome, valor, descricao, imagem) {
+        this.id = id;
         this.nome = nome;
         this.valor = valor;
         this.descricao = descricao;
