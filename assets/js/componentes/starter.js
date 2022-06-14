@@ -2,6 +2,7 @@ import { Skin } from "./skin.js";
 import { Usuario } from "./usuario.js";
 import { Inventario } from "./inventario.js";
 import { Storage, AdminStorage } from "./storege.js";
+import { Transacao } from "./transacao.js";
 
 export class Starter {
     constructor() {
@@ -87,6 +88,7 @@ export class Starter {
                 "id": 0,
                 "nickname": "Bruno",
                 "senha": "1230498lsdfigj",
+                "permissao_grupo": "apostador",
                 "emailPrincipal": "bruno@gmail.com",
                 "emailSteam": "brunoStream@gmail.com",
                 "foto": "logo.jpg",
@@ -98,6 +100,7 @@ export class Starter {
                 "id": 1,
                 "nickname": "Alan",
                 "senha": "efkfkfk44444",
+                "permissao_grupo": "apostador",
                 "emailPrincipal": "alan@gmail.com",
                 "emailSteam": "alanStream@gmail.com",
                 "foto": "logo.jpg",
@@ -109,6 +112,7 @@ export class Starter {
                 "id": 2,
                 "nickname": "Julia",
                 "senha": "qoiueriiriirii",
+                "permissao_grupo": "apostador",
                 "emailPrincipal": "julia@gmail.com",
                 "emailSteam": "juliaStream@gmail.com",
                 "foto": "logo.jpg",
@@ -118,11 +122,12 @@ export class Starter {
             }
         ];
 
-        for (const item in listaUsuario) {
+        for (const item of listaUsuario) {
             let usuario = new Usuario(
                 item.id,
                 item.nickname, 
                 item.senha, 
+                item.permissao_grupo,
                 item.emailPrincipal, 
                 item.emailSteam, 
                 item.foto, 
@@ -157,7 +162,62 @@ export class Starter {
             this.inventarioStorage.salvar(inventario);
         }
     }
-    criarLojaUsuario() {}
-    criarLojaInventario() {}
-    criarTransacoes() {}
+    criarLojaUsuario() {
+        const usuarioLoja = {
+            "id": 3,
+            "nickname": "Julia",
+            "senha": "qoiueriiriirii",
+            "permissao_grupo": "loja",
+            "emailPrincipal": "julia@gmail.com",
+            "emailSteam": "juliaStream@gmail.com",
+            "foto": "logo.jpg",
+            "saldo": 889.99,
+            "ultimoAcesso": "2022-06-04 23:32:12",
+            "loginAutomantico": true
+        }
+        this.usuarioStorage.salvar(usuarioLoja);
+    }
+    criarLojaInventario() {
+        const inventarioLoja = {
+            "id": 4,
+            "usuarioId": 3,
+            "skinColecao": [0, 1, 2, 3, 4, 5]
+        };
+        this.inventarioStorage.salvar(inventarioLoja);
+    }
+    criarTransacoes() {
+        const listaTransacao = [
+            {
+                "id": 0,
+                "tipo": "deposito",
+                "usuarioId": 0,
+                "skinId": null,
+                "deposito": 200
+            },
+            {
+                "id": 1,
+                "tipo": "deposito",
+                "usuarioId": 0,
+                "skinId": null,
+                "deposito": 200
+            },
+            {
+                "id": 2,
+                "tipo": "deposito",
+                "usuarioId": 0,
+                "skinId": null,
+                "deposito": 200
+            }
+        ];
+        for (const item of listaTransacao) {
+            const transacao = new Transacao(
+                item.id, 
+                item.tipo, 
+                item.usuarioId, 
+                item.skinId, 
+                item.deposito
+            );
+            this.transacaoStorage.salvar(transacao);
+        }
+    }
 }
