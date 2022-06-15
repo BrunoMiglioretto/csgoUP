@@ -34,50 +34,57 @@ export class Starter {
         const listaSkin = [
             {
                 "id": 0,
-                "nome": "skin de nome 1",
+                "nome": "Man",
                 "valor": 123.89,
-                "descricao": "uma descricao",
+                "descricao": "AWP",
                 "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/AWP MAN PNG.png"
             },
             {
                 "id": 1,
-                "nome": "skin de nome 1",
+                "nome": "Neon Revolution",
                 "valor": 123.89,
-                "descricao": "uma descricao",
-                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/AWP MAN PNG.png"
+                "descricao": "AK-47",
+                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/AK NEON REVOLUTION PNG.png"
             },
             {
                 "id": 2,
-                "nome": "skin de nome 1",
+                "nome": "Wild Lotus",
                 "valor": 123.89,
-                "descricao": "uma descricao",
-                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/AWP MAN PNG.png"
+                "descricao": "AK-47",
+                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/AK WILD LOTUS.png"
             },
             {
                 "id": 3,
-                "nome": "skin de nome 1",
+                "nome": "Desert Hydra",
                 "valor": 123.89,
-                "descricao": "uma descricao",
-                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/AWP MAN PNG.png"
+                "descricao": "AWP",
+                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/AWP DESERT HYDRA PNG.png"
             },
             {
                 "id": 4,
-                "nome": "skin de nome 1",
+                "nome": "Fade",
                 "valor": 123.89,
-                "descricao": "uma descricao",
-                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/AWP MAN PNG.png"
+                "descricao": "AWP",
+                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/AWP FADE PNG.png"
             },
             {
                 "id": 5,
-                "nome": "skin de nome 1",
+                "nome": "Wasteland",
                 "valor": 123.89,
-                "descricao": "uma descricao",
-                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/AWP MAN PNG.png"
+                "descricao": "Glock",
+                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/GLOCK-18 WASTELAND.png"
+            },
+            {
+                "id": 6,
+                "nome": "Chaticos",
+                "valor": 123.89,
+                "descricao": "M4a1-S",
+                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/M4A1S CHATICOS.png"
             }
         ];
 
         for (const item of listaSkin) {
-            let skin = new Skin(item.nome, item.valor, item.descricao, item.imagem);
+            let skin = new Skin(item.id,item.nome, item.valor, item.descricao, item.imagem);
             this.skinStorage.salvar(skin);
         }
     }
