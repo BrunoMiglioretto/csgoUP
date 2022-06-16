@@ -1,4 +1,4 @@
-import { Skin } from "./componentes/skin.js";
+import { Skin } from "../modelos/skin.js";
 
 export function gerarSkinsRoleta() {
     const caixaRoletaJogador = document.getElementById("caixaRoletaJogador");

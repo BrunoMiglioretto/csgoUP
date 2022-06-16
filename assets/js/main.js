@@ -1,6 +1,6 @@
-import { gerarSlider } from "./carrossel.js";
-import { Starter } from "./componentes/starter.js";
-import { gerarInventarioLoja } from "./inventarioRoleta.js";
+import { gerarSlider } from "./componentes/carrossel.js";
+import { Starter } from "./utils/starter.js";
+import { gerarInventarioLoja } from "./componentes/inventarioRoleta.js";
 
 const starter = new Starter();
 starter.start();

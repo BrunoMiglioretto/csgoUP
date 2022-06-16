@@ -1,8 +1,8 @@
-import { Skin } from "./skin.js";
-import { Usuario } from "./usuario.js";
-import { Inventario } from "./inventario.js";
+import { Skin } from "../modelos/skin.js";
+import { Usuario } from "../modelos/usuario.js";
+import { Inventario } from "../modelos/inventario.js";
 import { Storage, AdminStorage } from "./storege.js";
-import { Transacao } from "./transacao.js";
+import { Transacao } from "../modelos/transacao.js";
 
 export class Starter {
     constructor() {
