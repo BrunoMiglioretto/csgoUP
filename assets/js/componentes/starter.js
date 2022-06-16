@@ -84,7 +84,7 @@ export class Starter {
         ];
 
         for (const item of listaSkin) {
-            let skin = new Skin(item.id,item.nome, item.valor, item.descricao, item.imagem);
+            let skin = new Skin(item.id, item.nome, item.valor, item.descricao, item.imagem);
             this.skinStorage.salvar(skin);
         }
     }
@@ -186,9 +186,9 @@ export class Starter {
     }
     criarLojaInventario() {
         const inventarioLoja = {
-            "id": 4,
+            "id": 3,
             "usuarioId": 3,
-            "skinColecao": [0, 1, 2, 3, 4, 5]
+            "skinColecao": [0, 1, 2]
         };
         this.inventarioStorage.salvar(inventarioLoja);
     }
