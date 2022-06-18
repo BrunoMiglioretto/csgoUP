@@ -196,7 +196,7 @@ export class Starter {
         const listaTransacao = [
             {
                 "id": 0,
-                "tipo": "tranferencia",
+                "tipo": "ganhoRoleta",
                 "de-usuario": 0,
                 "para-usuario": 2,
                 "skinId": 1,
@@ -204,7 +204,7 @@ export class Starter {
             },
             {
                 "id": 1,
-                "tipo": "transferencia",
+                "tipo": "ganhoRoleta",
                 "de-usuario": 0,
                 "para-usuario": 2,
                 "skinId": 2,
@@ -212,7 +212,7 @@ export class Starter {
             },
             {
                 "id": 2,
-                "tipo": "transferencia",
+                "tipo": "ganhoRoleta",
                 "de-usuario": 0,
                 "para-usuario": 2,
                 "skinId": 3,

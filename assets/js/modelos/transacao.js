@@ -1,8 +1,17 @@
 export class Transacao {
-    constructor(id, tipo, usuarioId, skinId, valor) {
+    /*
+        tipos:
+        - ganhoRoleta 
+        - perdaRoleta
+        - deposito
+        - saque
+        - compra 
+    */
+    constructor(id, tipo, deUsuario, paraUsuario, skinId, valor) {
         this.id = id;
         this.tipo = tipo;
-        this.usuarioId = usuarioId;
+        this.deUsuario = deUsuario;
+        this.paraUsuario = paraUsuario;
         this.skinId = skinId;
         this.valor = valor;
     }
