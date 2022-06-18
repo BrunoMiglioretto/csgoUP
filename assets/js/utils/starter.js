@@ -196,24 +196,27 @@ export class Starter {
         const listaTransacao = [
             {
                 "id": 0,
-                "tipo": "deposito",
-                "usuarioId": 0,
-                "skinId": null,
-                "deposito": 200
+                "tipo": "tranferencia",
+                "de-usuario": 0,
+                "para-usuario": 2,
+                "skinId": 1,
+                "deposito": null
             },
             {
                 "id": 1,
-                "tipo": "deposito",
-                "usuarioId": 0,
-                "skinId": null,
-                "deposito": 200
+                "tipo": "transferencia",
+                "de-usuario": 0,
+                "para-usuario": 2,
+                "skinId": 2,
+                "deposito": null
             },
             {
                 "id": 2,
-                "tipo": "deposito",
-                "usuarioId": 0,
-                "skinId": null,
-                "deposito": 200
+                "tipo": "transferencia",
+                "de-usuario": 0,
+                "para-usuario": 2,
+                "skinId": 3,
+                "deposito": null
             }
         ];
         for (const item of listaTransacao) {
