@@ -1,4 +1,4 @@
-import { Storage } from "../storege.js";
+import { Storage } from "../storage.js";
 import { Transacao } from "../../modelos/transacao.js";
 
 export class TransacaoStorage extends Storage {
@@ -16,7 +16,6 @@ export class TransacaoStorage extends Storage {
                 item.tipo, 
                 item.deUsuario, 
                 item.paraUsuario, 
-                item.usuarioId, 
                 item.skinId, 
                 item.valor
             ));

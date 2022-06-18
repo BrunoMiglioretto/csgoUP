@@ -1,7 +1,7 @@
 import { Skin } from "../modelos/skin.js";
 import { Usuario } from "../modelos/usuario.js";
 import { Inventario } from "../modelos/inventario.js";
-import { Storage, AdminStorage } from "./storege.js";
+import { Storage, AdminStorage } from "./storage.js";
 import { Transacao } from "../modelos/transacao.js";
 
 export class Starter {
@@ -197,35 +197,44 @@ export class Starter {
             {
                 "id": 0,
                 "tipo": "ganhoRoleta",
-                "de-usuario": 0,
-                "para-usuario": 2,
+                "deUsuario": 0,
+                "paraUsuario": 2,
                 "skinId": 1,
-                "deposito": null
+                "valor": null
             },
             {
                 "id": 1,
                 "tipo": "ganhoRoleta",
-                "de-usuario": 0,
-                "para-usuario": 2,
+                "deUsuario": 0,
+                "paraUsuario": 2,
                 "skinId": 2,
-                "deposito": null
+                "valor": null
             },
             {
                 "id": 2,
                 "tipo": "ganhoRoleta",
-                "de-usuario": 0,
-                "para-usuario": 2,
+                "deUsuario": 0,
+                "paraUsuario": 2,
                 "skinId": 3,
-                "deposito": null
+                "valor": null
+            },
+            {
+                "id": 3,
+                "tipo": "ganhoRoleta",
+                "deUsuario": 0,
+                "paraUsuario": 2,
+                "skinId": 4,
+                "valor": null
             }
         ];
         for (const item of listaTransacao) {
             const transacao = new Transacao(
                 item.id, 
                 item.tipo, 
-                item.usuarioId, 
+                item.deUsuario,
+                item.paraUsuario,
                 item.skinId, 
-                item.deposito
+                item.valor
             );
             this.transacaoStorage.salvar(transacao);
         }
