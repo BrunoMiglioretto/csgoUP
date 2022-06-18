@@ -1,5 +1,5 @@
 import { Skin } from '../modelos/skin.js';
-import { Storage } from '../utils/storege.js';
+import { Storage } from '../utils/storage.js';
 
 export function gerarInventarioJogador() {
     const quantidadeLoop = 10;
