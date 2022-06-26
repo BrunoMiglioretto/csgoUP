@@ -1,12 +1,12 @@
 export class Skin {
-    constructor(id, nome, valor, descricao, imagem) {
+    constructor(id, nome, valor, descricao, imagem, tipoItem) {
         this.id = id;
         this.nome = nome;
         this.valor = valor;
         this.descricao = descricao;
         this.imagem = imagem;
+        this.tipoItem = tipoItem;
     }
-    
     gerarCardPequeno() {
         const skinNome = document.createElement("p");
         skinNome.classList.add("name");
