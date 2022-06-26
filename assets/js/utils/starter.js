@@ -182,7 +182,7 @@ export class Starter {
         ];
 
         for (const item of listaSkin) {
-            let skin = new Skin(item.id, item.nome, item.valor, item.descricao, item.imagem,this.tipoItem);
+            let skin = new Skin(item.id, item.nome, item.valor, item.descricao, item.imagem, item.tipoItem);
             this.skinStorage.salvar(skin);
         }
     }

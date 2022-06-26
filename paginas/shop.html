@@ -42,19 +42,17 @@
     </div>
 
     <div id="carrossel" class="container-carrossel"></div>
-    <script type="module" src="../assets/js/componentes/inventarioLoja.js"></script>
-
     <main>
         <div class="page-wrapper">
             <div class="header-shop">
                 <h1 class="loja">LOJA</h1>
                 <div class="caixaHeader">
                     <ul class="selects">
-                        <li onclick="gerarInventarioLoja(' ')" id="todas" ><a href="#">Todas</a> </li>
-                        <li onclick="gerarInventarioLoja('facas')" id="facas"><a href="#">Facas</a></li>
-                        <li onclick="gerarInventarioLoja('luvas')" id="luvas"><a href="#">Luvas</a></li>
-                        <li onclick="gerarInventarioLoja('rifles')" id="rifles"><a href="#">Rifles</a></li>
-                        <li onclick="gerarInventarioLoja('pistolas')" id="pistolas"><a href="#">Pistolas</a></li>
+                        <li id="todas"><a>Todas</a></li>
+                        <li id="facas"><a>Facas</a></li>
+                        <li id="luvas"><a>Luvas</a></li>
+                        <li id="rifles"><a>Rifles</a></li>
+                        <li id="pistolas"><a>Pistolas</a></li>
                     </ul>
                 </div>
             </div>
@@ -70,18 +68,5 @@
     </main>
 </body>
 <script type="module" src="../assets/js/main.js"></script>
-<script>
-import { InventarioStorage } from "../utils/Storages/inventarioLojaStorage.js";
-
-function gerarInventarioLoja(tipoItem) {
-    const inventarioSkinLoja = document.getElementById("inventarioSkinLoja");
-    const inventarioStorage = new InventarioStorage(3);
-    
-    for (const skin of inventarioStorage.buscarSkins(tipoItem)) {
-        inventarioSkinLoja.append(skin.gerarCardPequenoLoja());
-    }
-}
-
-gerarInventarioLoja(); 
-</script>
+<script type="module" src="../assets/js/componentes/inventarioLoja.js"></script>
 </html>

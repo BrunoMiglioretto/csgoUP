@@ -3,7 +3,6 @@ import { Skin } from "../../modelos/skin.js";
 import { Storage } from "../storage.js";
 
 export class InventarioStorage extends Storage {
-
     constructor(usuarioId) {
         super("inventario");
         this.usuarioId = usuarioId;
@@ -20,9 +19,9 @@ export class InventarioStorage extends Storage {
         if (tipoItem == undefined) {
             return listaSkin;
         }
-        return listaSkin.filter((elemento) => elemento.tipoItem == tipoItem);
+        const lista = listaSkin.filter((elemento) => elemento.tipoItem == tipoItem);
+        return lista;
     }
-
 
     buscarInvetario() {
         const listaInventario = this.buscarLista();
@@ -34,7 +33,4 @@ export class InventarioStorage extends Storage {
         }
         return inventario;
     }
-
-
-
 }

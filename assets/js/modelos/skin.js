@@ -7,6 +7,7 @@ export class Skin {
         this.imagem = imagem;
         this.tipoItem = tipoItem;
     }
+    
     gerarCardPequeno() {
         const skinNome = document.createElement("p");
         skinNome.classList.add("name");
