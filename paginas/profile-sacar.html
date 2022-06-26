@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Depositar - CSGO UP</title>
+    <title>Sacar - CSGO UP</title>
     <link href="../assets/css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x-icon">
 </head>
@@ -20,9 +20,7 @@
                         <ul class="submenu">
                             <li><a href="../paginas/profile-config.html">Configuracoes</a></li>
                             <li><a href="../paginas/profile-deposito.html">Depositar</a></li>
-                            <li><a href="#">Sacar</a></li>
-                            <li><a href="#">Historico</a></li>
-                            <li><a href='#'>Estatisticas</a></li>
+                            <li><a href="../paginas/profile-sacar.html">Sacar</a></li>
                             <li><a href='#'>Logout</a></li>
                         </ul>
                     </li>
@@ -41,3 +39,35 @@
     </div>
 
     <div id="carrossel" class="container-carrossel"></div>
+    
+    <main>
+        <h1>SELECIONE UM VALOR<br>PARA SACAR</h1>
+        <div class="page-wrapper perfil-sacar">
+            <div id="profile-sacar" class="caixa">
+                <h3>Saldo disponivel</h3>   
+                <div    >
+                    <p class="quantidade-disponivel">
+                        R$ 9999,00
+                    </p>
+                </div>
+
+            </div>
+            <div id="profile-deposito" class="caixa">
+                <h3>Quanto voce quer sacar?</h3>   
+                <div>
+                    <div class="input-group2">
+                        <span class="input-group-addon">R$</span>
+                        <input type="text" class="Sacar" onkeypress="return event.charCode >= 48 && event.charCode <= 57"> 
+                    </div>
+                    <div>          
+                        <div class="botao-sacar2">     
+                            <a class="botao-sacar" href="#"><button>Sacar</button></a> 
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>

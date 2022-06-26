@@ -722,16 +722,19 @@ h3, .header{
 
 
 #profile{    
+   margin-left: 430px;
+   margin-right: 30px;
     width: 600px;
-    height: 600px;  
+    height: 550px;  
     color: #777;
     font-size: 30px;
+    padding-top: 30px;
+   
 }
 
 #bloco-email{
-    margin-left: 70px;
+    height: 280px;  
     width: 450px;
-    height: 300px;  
     color: #777;
     font-size: 30px;
 }
@@ -741,8 +744,7 @@ h3, .header{
     margin-left: 30px;
 }
 #photo{
-    
-    width: 200px;
+    width: 180px;
     margin: auto;
     border-radius: 50%;
     filter: opacity(30%);
@@ -765,7 +767,7 @@ h3, .header{
 }
 
 .perfil-container {
-    margin: auto;
+    display: flex;
 }
 
 .perfil-container .caixa {
@@ -829,6 +831,7 @@ h3, .header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
 }
 
 .Deposito {
@@ -845,7 +848,7 @@ h3, .header{
 }
 
 .botao button {
-    margin-top: 65px;
+    margin-top: 90px;
     margin-left: 157px;
     background: #15b856; 
     border-radius: 6px; 
@@ -871,7 +874,7 @@ h3, .header{
 .input-group {
     display: flex;
     margin-top: 60px;
-    margin-left: 100px;
+    margin-left: 105px;
 }
 
 .input-group-addon {
@@ -879,4 +882,65 @@ h3, .header{
     margin-top: 13px;
     border: none; 
     font-size: 30px;
+}
+
+/*STYLE DO PERFIL - SACAR*/
+
+.perfil-sacar {
+    padding: 50px;
+}
+
+.botao-sacar2{
+    display: flex;
+    justify-content: center;
+}
+
+.botao-sacar button {
+    margin: auto;
+    margin-top: 110px;
+    width: 200px;
+    border-radius: 6px; 
+    padding: 25px; 
+    cursor: pointer; 
+    border: none; 
+    font-size: 20px;
+    background-color: #15b856;
+    color: #fff; 
+}
+
+.input-group2 {
+    display: flex;
+    margin-top: 120px;
+    margin-left: 153px;
+}
+
+.Sacar {
+    height: 80px;
+    width: 50%;
+    font-size: 60px;
+    color: white;
+    background: rgba(0, 0, 0, 0); 
+    border: none; 
+    outline: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+#profile-sacar {
+    margin: auto;
+    width: 600px;
+    height: auto;
+    color: #777;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.quantidade-disponivel {
+    font-size: 35px;
+    color: white;
+    padding: 10px;
 }
