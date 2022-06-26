@@ -14,6 +14,9 @@ export class Starter {
     }
 
     start() {
+        if (this.verificarDadosStorege()) {
+            return;
+        }
         this.resetStorage();
 
         this.criarSkinCatalogo();
@@ -25,6 +28,22 @@ export class Starter {
 
         this.criarTransacoes();
     }
+    
+    verificarDadosStorege() {
+        if (!this.skinStorage.isSet()) {
+            return false;
+        }
+        if (!this.inventarioStorage.isSet()) {
+            return false;
+        }
+        if (!this.usuarioStorage.isSet()) {
+            return false;
+        }
+        if (!this.transacaoStorage.isSet()) {
+            return false;
+        }
+        return true;
+    }    
 
     resetStorage() {
         this.adminStorage.resetStorage(); 

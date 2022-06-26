@@ -57,6 +57,9 @@ export class Storage {
         const listaAtualizada = listaEntidadeJSON.filter((elemento) => elemento.id != id);
         this.webStorage.setItem(this.entidade, JSON.stringify(listaAtualizada));
     }
+    isSet() {
+        return !!this.webStorage.getItem(this.entidade);
+    }
 }
 
 export class AdminStorage extends Storage {
