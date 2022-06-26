@@ -80,6 +80,69 @@ export class Starter {
                 "valor": 123.89,
                 "descricao": "M4a1-S",
                 "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/M4A1S CHATICOS.png"
+            },
+            {
+                "id": 7,
+                "nome": "Imminent",
+                "valor": 123.89,
+                "descricao": "M4a1-S",
+                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/M4A1S IMMINENT.png"
+            },
+            {
+                "id": 8,
+                "nome": "Howl",
+                "valor": 123.89,
+                "descricao": "M4A4",
+                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/M4A4 HOWL.png"
+            },
+            {
+                "id": 9,
+                "nome": "Dragonfire",
+                "valor": 123.89,
+                "descricao": "SSG",
+                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/SSG 08 DRAGONFIRE.png"
+            },
+            {
+                "id": 10,
+                "nome": "NeoNoir",
+                "valor": 123.89,
+                "descricao": "USP",
+                "imagem": "../assets/img/armas-inventario/SKINS COVERT/PNG/USP NEO NOIR.png"
+            },
+            {
+                "id": 11,
+                "nome": "FreeHand",
+                "valor": 123.89,
+                "descricao": "Bayonet",
+                "imagem": "../assets/img/armas-inventario/FACAS E LUVAS/png/BAYONET FREEHAND.png"
+            },
+            {
+                "id": 12,
+                "nome": "FreeHand",
+                "valor": 123.89,
+                "descricao": "Driver Gloves",
+                "imagem": "../assets/img/armas-inventario/FACAS E LUVAS/png/DRIVER GLOVES IMPERIAL PLAID.png"
+            },
+            {
+                "id": 13,
+                "nome": "Autotronic",
+                "valor": 123.89,
+                "descricao": "Karambit",
+                "imagem": "../assets/img/armas-inventario/FACAS E LUVAS/png/KARAMBIT AUTOTRONIC.png"
+            },
+            {
+                "id": 14,
+                "nome": "Doppler",
+                "valor": 123.89,
+                "descricao": "Talon",
+                "imagem": "../assets/img/armas-inventario/FACAS E LUVAS/png/TALON KNIFE DOPPLER.png"
+            },
+            {
+                "id": 15,
+                "nome": "Fade",
+                "valor": 123.89,
+                "descricao": "NOMAD",
+                "imagem": "../assets/img/armas-inventario/FACAS E LUVAS/png/NOMAD KNIFE FADE.png"
             }
         ];
 
@@ -188,7 +251,7 @@ export class Starter {
         const inventarioLoja = {
             "id": 3,
             "usuarioId": 3,
-            "skinColecao": [0, 1, 2]
+            "skinColecao": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
         };
         this.inventarioStorage.salvar(inventarioLoja);
     }

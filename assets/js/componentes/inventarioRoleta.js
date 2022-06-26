@@ -44,6 +44,6 @@ export function gerarInventarioLoja() {
             skinJson.descricao,
             skinJson.imagem
         );
-        inventarioSkinLoja.append(skin.gerarCardPequeno());
+        inventarioSkinLoja.append(skin.gerarCardPequenoLoja());
     }
 }
