@@ -28,22 +28,3 @@ export function gerarInventarioJogador() {
     }
 }
 
-export function gerarInventarioLoja() {
-    const inventarioSkinLoja = document.getElementById("inventarioSkinLoja");
-    const inventarioStorage = new Storage('inventario');
-    const skinStorage = new Storage("skin");
-    const lojaInventario = inventarioStorage.buscar(3);
-
-    for (const skinId of lojaInventario.skinColecao) {
-        const skinJson = skinStorage.buscar(skinId);
-
-        const skin = new Skin(
-            skinJson.id,
-            skinJson.nome,
-            skinJson.valor,
-            skinJson.descricao,
-            skinJson.imagem
-        );
-        inventarioSkinLoja.append(skin.gerarCardPequeno());
-    }
-}

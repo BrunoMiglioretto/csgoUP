@@ -40,60 +40,31 @@
     </div>
 
     <div id="carrossel" class="container-carrossel"></div>
-
-
     <main>
         <div class="page-wrapper">
             <div class="header-shop">
                 <h1 class="loja">LOJA</h1>
                 <div class="caixaHeader">
                     <ul class="selects">
-                        <li onclick="switchSelects('todas')" id="todas" ><a href="#">Todas</a> </li>
-                        <li onclick="switchSelects('facas')" id="facas"><a href="#">Facas</a></li>
-                        <li onclick="switchSelects('luvas')" id="luvas"><a href="#">Luvas</a></li>
-                        <li onclick="switchSelects('rifles')" id="rifles"><a href="#">Rifles</a></li>
-                        <li onclick="switchSelects('pistolas')" id="pistolas"><a href="#">Pistolas</a></li>
+                        <li id="todas"><a>Todas</a></li>
+                        <li id="facas"><a>Facas</a></li>
+                        <li id="luvas"><a>Luvas</a></li>
+                        <li id="rifles"><a>Rifles</a></li>
+                        <li id="pistolas"><a>Pistolas</a></li>
                     </ul>
                 </div>
             </div>
-            <div class = "headerShop">
-                
-                
+            <div class = "headerShop"> 
             </div>
             <div class="container-inventario caixa">
                 <div class="header">
                     <h3>Itens Disponiveis</h3>
                 </div>
-                    <div id="inventarioSkinLoja" class="body"></div>
+                <div id="inventarioSkinLoja" class="body"></div>
             </div>   
         </div>
     </main>
 </body>
-
-
-<script>
-    function switchSelects(selectEscolhido){
-        let facas = document.getElementById("facas")
-        let pistolas = document.getElementById("pistolas")
-        let luvas = document.getElementById("luvas")
-        let rifles = document.getElementById("rifles")
-        console.log(selectEscolhido)
-        console.log("=============")
-        if(selectEscolhido == "facas"){
-            let divFacas = document.getElementsByClassName("facas")
-            console.log(divFacas)
-            divFacas.style.display ="block"
-        }else{
-            let divPistolas = document.getElementsByClassName("pistolas")
-            divPistolas.style.display="none"
-            let divluvas = document.getElementsByClassName("luvas")
-            divLuvas.style.display="none"
-            let divRifles = document.getElementsByClassName("rifles")
-            divRifles.style.display="none"
-            console.log("entrou aqui 2")
-        }
-    }
-
-</script>
 <script type="module" src="../assets/js/main.js"></script>
+<script type="module" src="../assets/js/componentes/inventarioLoja.js"></script>
 </html>
