@@ -133,7 +133,7 @@
     background-position: center;
     background-size: cover;
 }
-.forgot{
+#esqueci{
     font-family: "Markazi";
     font-size: 18px;
     border: none;
@@ -143,6 +143,9 @@
     position: absolute;
     top: 86%;
     left: 64%;
+}
+#esqueciSenha{
+    display: none;
 }
 #inputConfirm{
     background: rgba(0, 0, 0, 0);

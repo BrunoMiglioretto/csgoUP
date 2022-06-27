@@ -37,6 +37,7 @@ function confirmaSenha(){
     var password1=document.getElementById("inputConfirm");
     var password2=document.getElementById("inputNewPassword");
     let botaoEnter=document.getElementById("inputEnter");
+    // let botaoEnterVermelho=document.getElementById("inputEnterVermelho");
     
     if(password1.value!=password2.value){
         password1.style.color = "#FF0000";
@@ -46,6 +47,14 @@ function confirmaSenha(){
         password1.style.color = "#FFFFFF";
         botaoEnter.src="../assets/img/startButton.png";
     }
+}
+
+function esqueciASenha(){
+    let login = document.getElementById("login");
+    let esqueci = document.getElementById("esqueciSenha");
+
+    login.style.display="none";
+    esqueci.style.display="block";
 }
 
 function switchShow(showStatus){

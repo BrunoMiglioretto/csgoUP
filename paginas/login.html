@@ -29,6 +29,7 @@
             <br><br>
             <input type="password" placeholder="Confirmar senha" onkeyup="confirmaSenha()" id="inputConfirm">
             <input type="image" src="../assets/img/startButton.png" alt="Enter" onclick="recebeDadosRegister()" id="inputEnter">
+            <!-- <input type="image" src="../assets/img/startButtonVermelho.png" alt="Enter" onclick="recebeDadosRegister()" id="inputEnter"> -->
         </div>
 
         <div id="login">
@@ -45,7 +46,15 @@
                 <input type="checkbox" name="Remember" id="remember">
                 <label for="Remember" class="rememberFont">Lembrar conta</label>
             </div>
-            <button class="forgot">Esqueci minha senha</button>
+            <button id="esqueci" onclick="esqueciASenha()">Esqueci minha senha </button>
+        </div>
+
+        <div id="esqueciSenha">
+            <input type="text" placeholder="Digite sua conta Steam" class="inputUser">
+            <br><br>
+            <input type="text" placeholder="Digite seu código de recuperação" class="inputUser">
+            <br><br>
+            <input type="text" placeholder="Digite sua nova senha" class="inputUser">
         </div>
     </div>
 
