@@ -8,6 +8,18 @@
     <title>Inventário - CSGO UP</title>
 </head>
 <body>
+    <div class="background-modal">
+        <div id="caixaCompra" class="modalCompra">
+            <p>Deseja realmente comprar esse item?</p>
+            <img src="../assets/img/armas-inventario/FACAS E LUVAS/png/BAYONET FREEHAND.png" alt="imagem">
+            <div>
+                <button id="sim" class="botaoCompra " onclick="displayView(id)">SIM</button>
+                <button id="nao" class="botaoCompra" onclick="displayView(id)">NÃO</button>
+            </div>
+        </div>
+    </div>
+
+
     <div class="page-wrapper">
         <div class="header-container">
             <img class="header-logo" src="../assets/img/LOGOCSGOUP.png" alt="CSGO UP">
@@ -42,6 +54,7 @@
     </div>
 
     <div id="carrossel" class="container-carrossel"></div>
+
     <main>
         <div class="page-wrapper">
             <div class="header-shop">
@@ -66,14 +79,6 @@
             </div>   
         </div>
     </main>
-    <div id="caixaCompra" class="modalCompra">
-        <p>Deseja realmente comprar esse item?</p>
-        <img src="../assets/img/armas-inventario/FACAS E LUVAS/png/BAYONET FREEHAND.png" alt="imagem">
-        <div>
-            <button id="sim" class="botaoCompra " onclick="displayView(id)">SIM</button>
-            <button id="nao" class="botaoCompra" onclick="displayView(id)">NÃO</button>
-        </div>
-    </div>
 </body>
 
 <script>
