@@ -1,3 +1,4 @@
+
 export class Skin {
     constructor(id, nome, valor, descricao, imagem, tipoItem) {
         this.id = id;
@@ -68,7 +69,9 @@ export class Skin {
         const cardContainer = document.createElement("figure");
         cardContainer.classList.add("card");
         cardContainer.onclick=()=>{
-            alert(this.id);
+
+            let divCompra = document.getElementById("caixaCompra");
+            divCompra.style.display = block;
         }
         cardContainer.append(imagem);
         cardContainer.append(legendaContainer);

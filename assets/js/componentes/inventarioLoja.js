@@ -9,7 +9,8 @@ function gerarInventarioLoja(tipoItem = undefined) {
         inventarioSkinLoja.append(skin.gerarCardPequenoLoja());
     }
 }
-
+let divCompra = document.getElementById("caixaCompra");
+divCompra.style.display = "block";
 gerarInventarioLoja();
 
 document.getElementById("todas").onclick = () => gerarInventarioLoja();

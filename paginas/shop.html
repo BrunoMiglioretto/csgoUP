@@ -66,7 +66,27 @@
             </div>   
         </div>
     </main>
+    <div id="caixaCompra" class="modalCompra">
+        <p>Deseja realmente comprar esse item?</p>
+        <img src="../assets/img/armas-inventario/FACAS E LUVAS/png/BAYONET FREEHAND.png" alt="imagem">
+        <div>
+            <button id="sim" class="botaoCompra " onclick="displayView(id)">SIM</button>
+            <button id="nao" class="botaoCompra" onclick="displayView(id)">NÃO</button>
+        </div>
+    </div>
 </body>
+
+<script>
+function displayView(SelectEscolhido) {
+    alert(SelectEscolhido);
+    let divCompra = document.getElementById("caixaCompra");
+    if (SelectEscolhido == 'nao') {
+        divCompra.style.display = "none";
+    }
+    
+}
+
+</script>
 <script type="module" src="../assets/js/main.js"></script>
 <script type="module" src="../assets/js/componentes/inventarioLoja.js"></script>
 </html>
