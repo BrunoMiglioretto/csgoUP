@@ -57,8 +57,18 @@ export class Storage {
         const listaAtualizada = listaEntidadeJSON.filter((elemento) => elemento.id != id);
         this.webStorage.setItem(this.entidade, JSON.stringify(listaAtualizada));
     }
+
     isSet() {
         return !!this.webStorage.getItem(this.entidade);
+    }
+
+    proximoRegistroId() {
+        const lista =  this.buscarLista();
+        const listaId = [0];
+        for (const elemento of lista) {
+            listaId.push(elemento.id ? (elemento.id + 1) : 0);
+        }
+        return Math.max(...listaId); 
     }
 }
 
