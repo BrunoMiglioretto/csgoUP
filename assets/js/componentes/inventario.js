@@ -23,7 +23,7 @@ export class Inventario {
                 skinJSON.tipoItem
             );
             const card = skin.gerarCardPequeno();
-            card.onclick = onclick;
+            card.onclick = () => onclick(skin);
 
             this.DOM.append(card);
         }
