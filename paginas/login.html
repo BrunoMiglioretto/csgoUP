@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="..\assets\css\style.css">
     <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x-icon">
 
-    <script src="../assets/js/login.js"></script>
+    <script src="../assets/js/componentes/login.js"></script>
 </head>
 <body id="bg">
     
@@ -28,7 +28,7 @@
             <input type="password" placeholder="Senha" id="inputNewPassword">
             <br><br>
             <input type="password" placeholder="Confirmar senha" onkeyup="confirmaSenha()" id="inputConfirm">
-            <input type="image" src="../assets/img/startButtonVermelho.png" alt="Enter" onclick="recebeDadosRegister()" id="inputEnter">
+            <input type="image" src="../assets/img/startButtonVermelho.png" alt="Enter" onclick="recebeDados('register')" id="inputEnter">
         </div>
 
         <div id="login">
@@ -45,8 +45,18 @@
                 <input type="checkbox" name="Remember" id="remember">
                 <label for="Remember" class="rememberFont">Lembrar conta</label>
             </div>
-            <button class="forgot">Esqueci minha senha</button>
+            <button class="forgot" onclick="switchTab('esqueci')">Esqueci minha senha</button>
         </div>
+
+        <div id="esqueciMinhaSenha">
+            <input type="text" placeholder="Insira seu Email" id="inputEmailEsqueci">
+            <br><br>
+            <input type="password" placeholder="Insira a nova senha" id="inputNewPassword">
+            <br><br>
+            <input type="password" placeholder="Confirmar senha" onkeyup="confirmaSenha()" id="inputSenhaEsqueci">
+            <button id="botaoAtualizar" onclick="recebeDados('esqueci')">Atualizar <p><p> senha</button>
+        </div>
+
     </div>
 
 </body>

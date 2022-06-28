@@ -374,6 +374,19 @@ h3, .header{
     background-attachment: fixed;
     overflow: hidden;
 }
+#botaoAtualizar{
+    position: absolute;
+    background-color: #00b94b;
+    padding: 5px;
+    width: 30%;
+    border-radius: 10px;
+    font-family: 'ColdWarm';
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    left: 68%;
+    top: 62%;
+}
 #botaoLogin{
     font-size: 35px;
     color: #00b94b;
@@ -467,6 +480,9 @@ h3, .header{
     background-position: center;
     background-size: cover;
 }
+#esqueciMinhaSenha{
+    display: none;
+}
 .forgot{
     font-family: "Markazi";
     font-size: 18px;
@@ -488,6 +504,24 @@ h3, .header{
     color: rgb(255, 255, 255);
 }
 #inputEmail{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    color: white;
+}
+#inputSenhaEsqueci{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    color: rgb(255, 255, 255);
+}
+#inputEmailEsqueci{
     background: rgba(0, 0, 0, 0);
     border: none;
     outline: none;

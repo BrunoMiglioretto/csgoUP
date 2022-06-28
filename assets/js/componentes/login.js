@@ -4,11 +4,13 @@ function switchTab(nomeBotao){
     let divRegister=document.getElementById("register");
     let botaoLogin=document.getElementById("botaoLogin");
     let botaoRegister=document.getElementById("botaoRegister");
+    let divEsqueci=document.getElementById("esqueciMinhaSenha");
 
 
     if(nomeBotao=="login"){
         divLogin.style.display="block";
         divRegister.style.display="none";
+        divEsqueci.style.display="none";
         botaoLogin.style.color = "#00b94b";
     }else{
         botaoLogin.style.color = "#494949";
@@ -17,20 +19,35 @@ function switchTab(nomeBotao){
     if(nomeBotao=="register"){
         divRegister.style.display="block";
         divLogin.style.display="none";
+        divEsqueci.style.display="none";
         botaoRegister.style.color = "#00b94b";
     }else{
         botaoRegister.style.color = "#494949";
     }
+
+    if(nomeBotao=="esqueci"){
+        divLogin.style.display="none";
+        divRegister.style.display="none";
+        divEsqueci.style.display="block";
+    }
 }
 
-function recebeDadosRegister(){
+function recebeDados(dado){
+    
     var email=document.getElementById("inputEmail");
-    var steam=document.getElementById("inputSteam");
-    var senha=document.getElementById("inputNewPassword");
 
-    localStorage.email = JSON.stringify(email.value);
-    localStorage.steam = JSON.stringify(steam.value);
+    if(dado=="register"){
+        var steam=document.getElementById("inputSteam");
+        var senha=document.getElementById("inputNewPassword");
+
+        localStorage.steam = JSON.stringify(steam.value);
+        localStorage.email = JSON.stringify(email.value);
+    }else if(dado == "esqueci"){                                        //verificar se o email está certo
+        var senha=document.getElementById("inputSenhaEsqueci");
+    }
     localStorage.senha = JSON.stringify(senha.value);
+
+    switchTab('login');
 }
 
 function confirmaSenha(){
@@ -40,8 +57,6 @@ function confirmaSenha(){
     
     if(password1.value!=password2.value){
         password1.style.color = "#FF0000";
-        // botaoEnter.src="../assets/img/startButtonVermelho.png";
-        // document.getElementById("inputEnter").className=
         botaoEnter.style.filter = "hue-rotate(0deg)";
     }else{
         password1.style.color = "#FFFFFF";
@@ -50,17 +65,16 @@ function confirmaSenha(){
 }
 
 function confirmaLogin(){
-    var loginCerto = localStorage.getItem("steam");         //corrigir aqui
-    var passwordCerto = localStorage.senha;
-    var login = document.getElementById("inputUser");
-    var password = document.getElementById("inputPass");
+    var loginCerto = localStorage.getItem('steam');
+    var passwordCerto = localStorage.getItem('senha');
+    var login = '"' + document.getElementById("inputUser").value + '"';
+    var password = '"' + document.getElementById("inputPass").value + '"';
 
     let botaoSignin = document.getElementById("botaoSignin");
-    
-    if (login.value!=loginCerto /*|| password.value!=passwordCerto*/) {
-        botaoSignin.style.backgroundColor="#FF0000";
-    }else{
+    if (login==loginCerto && password==passwordCerto) {
         botaoSignin.style.backgroundColor="#00b94b";
+    }else{
+        botaoSignin.style.backgroundColor="#FF0000";
     }
 
 }
