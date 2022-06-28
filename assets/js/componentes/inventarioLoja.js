@@ -1,4 +1,5 @@
 import { InventarioStorage } from "../utils/Storages/inventarioLojaStorage.js";
+import { ModalConfirmacaoCompra } from "../componentes/modals/modalConfirmacaoCompra.js";
 
 function gerarInventarioLoja(tipoItem = undefined) {
     const inventarioSkinLoja = document.getElementById("inventarioSkinLoja");
@@ -6,11 +7,15 @@ function gerarInventarioLoja(tipoItem = undefined) {
 
     const inventarioStorage = new InventarioStorage(3);
     for (const skin of inventarioStorage.buscarSkins(tipoItem)) {
-        inventarioSkinLoja.append(skin.gerarCardPequenoLoja());
+        const card = skin.gerarCardPequenoLoja();
+        card.onclick = () => {
+            const modal = new ModalConfirmacaoCompra("backgroundModal");
+            modal.abrirDetalhes(skin.id);
+        }
+        inventarioSkinLoja.append(card);
     }
 }
-let divCompra = document.getElementById("caixaCompra");
-divCompra.style.display = "block";
+
 gerarInventarioLoja();
 
 document.getElementById("todas").onclick = () => gerarInventarioLoja();

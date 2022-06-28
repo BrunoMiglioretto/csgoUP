@@ -1,4 +1,3 @@
-
 export class Skin {
     constructor(id, nome, valor, descricao, imagem, tipoItem) {
         this.id = id;
@@ -34,9 +33,6 @@ export class Skin {
 
         const cardContainer = document.createElement("figure");
         cardContainer.classList.add("card");
-        // cardContainer.onclick=()=>{
-        //     alert(this.id);
-        // }
         cardContainer.append(imagem);
         cardContainer.append(legendaContainer);
     
@@ -67,12 +63,7 @@ export class Skin {
         imagem.src = this.imagem;
 
         const cardContainer = document.createElement("figure");
-        cardContainer.classList.add("card");
-        cardContainer.onclick=()=>{
-
-            let divCompra = document.getElementById("caixaCompra");
-            divCompra.style.display = block;
-        }
+        cardContainer.classList.add("card"); 
         cardContainer.append(imagem);
         cardContainer.append(legendaContainer);
     
