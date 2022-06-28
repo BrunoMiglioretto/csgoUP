@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Profile - CSGO UP</title>
-    <link href="../assets/css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <title>Profile - CSGO UP</title>
+        <script src="../assets/js/modelos/imgProfile.js"></script>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x-icon">
 </head>
 <body>
     <div class="page-wrapper">
@@ -44,8 +45,22 @@
         <h1>CONFIGURACOES<br>DO PERFIL</h1>
         
         <div class="page-wrapper perfil-container">
-            <div id="profile" class="caixa">
-                <img id="photo" src="../assets/img/profile/profile.png">
+            <div id="profile" class="caixa">                
+                
+                <div id="menuImg" class="menuImg" data-aberto="false">
+                    <span>
+                        <img id="photo" src="../assets/img/profile/img-profile-0.png" id="trocarimg">
+                        <img id="edit" src="../assets/img/icone-edit.png" onclick="myFunction()">
+                        
+                    </span>
+                    <div id="myDropdown" class="subimg">
+                        <img src="../assets/img/profile/img-profile-1.webp" onclick="img01()">
+                        <img src="../assets/img/profile/img-profile-2.webp" onclick="img02()">
+                        <img src="../assets/img/profile/img-profile-3.webp" onclick="img03()">
+                        <img src="../assets/img/profile/img-profile-4.webp" onclick="img04()">
+                    </div>                    
+                </div>
+
                 <hr style="margin: 20px 0;"size="4" NOSHADE>
                 <div class="left">                    
                     <div id="data">

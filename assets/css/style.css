@@ -719,17 +719,48 @@ h3, .header{
     }
 
 /*STYLE DO PERFIL - CONFIG*/
-
-
 #profile{    
    margin-left: 430px;
    margin-right: 30px;
-    width: 600px;
-    height: 550px;  
+   width: 600px;
+   height: 550px;  
+   color: #777;
+   font-size: 30px;
+   padding-top: 30px;   
+}
+
+#edit{
+    width: 15px;
+    filter: invert(30%);
+    cursor: pointer;
+}
+
+#edit:hover{
+    filter: invert(50%);
+    
+}
+/*Foto de perfils*/
+
+.subimg{
+    margin-left: 200px;
+    display: none;
+}
+
+.subimg img{
+    height: 25px;
     color: #777;
-    font-size: 30px;
-    padding-top: 30px;
-   
+    margin: 2px;
+    border-radius: 50%;
+    filter: opacity(30%);
+    cursor: pointer;
+}
+
+.subimg img:hover{
+    filter: opacity(60%);    
+}
+
+.show{
+    display: block;
 }
 
 #bloco-email{
@@ -737,7 +768,7 @@ h3, .header{
     width: 450px;
     color: #777;
     font-size: 30px;
-}
+}  
 
 .left{
     width: 400px;
@@ -747,13 +778,8 @@ h3, .header{
     width: 180px;
     margin: auto;
     border-radius: 50%;
-    filter: opacity(30%);
-    margin-left: 27%;
-
-}
-#photo:hover{
     filter: opacity(60%);
-
+    text-align: center;
 }
 
 #data{
