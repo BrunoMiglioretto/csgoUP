@@ -117,7 +117,17 @@
             padding-top: 50px;
             padding-bottom: 15px;
         }
-
+        .botao-acessar{
+            cursor: pointer;
+            background-color: #42a842;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 15px;
+            justify-self: end;
+            margin-bottom: 25px;
+            font-family: noContinue;
+            font-size: 20px;
+        }
             .header-container .header-logo {
                 height: 70px;
                 transition: all 0.6s cubic-bezier(0.2, 0.84, 0.44, 1);
@@ -553,7 +563,7 @@ h3, .header{
     padding-bottom: 5px;
     color: white;
 }
-#inputSteam{
+#inputNickname{
     background: rgba(0, 0, 0, 0);
     border: none;
     outline: none;

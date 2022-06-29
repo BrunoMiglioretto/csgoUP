@@ -1,4 +1,41 @@
 /*SCRIPT LOGIN*/
+
+import {Autenticador} from "../componentes/autenticacao.js" 
+const autenticador = new Autenticador(); 
+
+document.getElementById("botaoLogin").onclick=()=>switchTab('login');
+document.getElementById("botaoRegister").onclick=()=>switchTab('register');
+document.getElementById("inputConfirm").onkeyup=()=>confirmaSenha();
+document.getElementById("inputEnter").onclick=()=>registrar();
+// document.getElementById("inputUser").onkeyup=()=>confirmaLogin();
+document.getElementById("showOn").onclick=()=>switchShow('on');
+document.getElementById("showOff").onclick=()=>switchShow('off');
+document.querySelector(".forgot").onclick=()=>switchTab('esqueci');
+document.getElementById("inputSenhaEsqueci").onkeyup=()=>confirmaSenha('esqueci');
+document.getElementById("botaoAtualizar").onclick=()=>recebeDados('esqueci');
+document.getElementById("botaoSignin").onclick=()=>logar();
+
+function logar(){
+    var login=document.getElementById("inputUser").value;
+    var senha=document.getElementById("inputPass").value;
+
+    const usuario = autenticador.autenticar(login, senha);
+    console.log(usuario);
+    if(!!usuario){
+        window.location.href="http://localhost:5500/paginas/index.html";
+        return;
+    }
+}
+
+function registrar(){
+    var nickname=document.getElementById("inputNickname").value;
+    var email=document.getElementById("inputEmail").value;
+    var senha=document.getElementById("inputNewPassword").value;
+
+    const usuario = autenticador.criarUsuario(email, nickname, senha);
+    switchTab('login');
+}
+
 function switchTab(nomeBotao){
     let divLogin=document.getElementById("login");
     let divRegister=document.getElementById("register");
@@ -32,6 +69,7 @@ function switchTab(nomeBotao){
     }
 }
 
+
 function recebeDados(dado){
     
     var email=document.getElementById("inputEmail");
@@ -62,21 +100,6 @@ function confirmaSenha(){
         password1.style.color = "#FFFFFF";
         botaoEnter.style.filter = "hue-rotate(100deg)";
     }
-}
-
-function confirmaLogin(){
-    var loginCerto = localStorage.getItem('steam');
-    var passwordCerto = localStorage.getItem('senha');
-    var login = '"' + document.getElementById("inputUser").value + '"';
-    var password = '"' + document.getElementById("inputPass").value + '"';
-
-    let botaoSignin = document.getElementById("botaoSignin");
-    if (login==loginCerto && password==passwordCerto) {
-        botaoSignin.style.backgroundColor="#00b94b";
-    }else{
-        botaoSignin.style.backgroundColor="#FF0000";
-    }
-
 }
 
 function switchShow(showStatus){

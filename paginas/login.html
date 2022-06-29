@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="..\assets\css\style.css">
     <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x-icon">
 
-    <script src="../assets/js/paginas/login.js"></script>
 </head>
 <body id="bg">
     
@@ -16,36 +15,36 @@
     <div class="cttrBlur"></div>
     
     <div class="telaLogin">
-        <button id="botaoLogin" onclick="switchTab('login')">Login</button>
-        <button id="botaoRegister" onclick="switchTab('register')">Registrar</button>
+        <button id="botaoLogin">Login</button>
+        <button id="botaoRegister">Registrar</button>
         <br>
 
         <div id="register">
             <input type="text" placeholder="Email " id="inputEmail">
             <br><br>
-            <input type="text" placeholder="Conta Steam" id="inputSteam">
+            <input type="text" placeholder="Nickname" id="inputNickname">
             <br><br>
             <input type="password" placeholder="Senha" id="inputNewPassword">
             <br><br>
-            <input type="password" placeholder="Confirmar senha" onkeyup="confirmaSenha()" id="inputConfirm">
-            <input type="image" src="../assets/img/startButtonVermelho.png" alt="Enter" onclick="recebeDados('register')" id="inputEnter">
+            <input type="password" placeholder="Confirmar senha" id="inputConfirm">
+            <input type="image" src="../assets/img/startButtonVermelho.png" alt="Enter" id="inputEnter">
         </div>
 
         <div id="login">
-            <input type="text" placeholder="Conta Steam" id="inputUser" onkeyup="confirmaLogin()">
+            <input type="text" placeholder="Nickname" id="inputUser">
             <br><br>
             <div id="show">
-                <input type="image" src="../assets/img/show.png" alt="Show" id="showOn" onclick="switchShow('on')">
-                <input type="image" src="../assets/img/showOff.png" alt="ShowOff" id="showOff" onclick="switchShow('off')">
+                <input type="image" src="../assets/img/show.png" alt="Show" id="showOn">
+                <input type="image" src="../assets/img/showOff.png" alt="ShowOff" id="showOff">
             </div>
-            <input type="password" placeholder="Senha" id="inputPass" onkeyup="confirmaLogin()">
+            <input type="password" placeholder="Senha" id="inputPass">
             <br><br><br>
             <button id="botaoSignin">Entrar</button>
             <div class="remember">
                 <input type="checkbox" name="Remember" id="remember">
                 <label for="Remember" class="rememberFont">Lembrar conta</label>
             </div>
-            <button class="forgot" onclick="switchTab('esqueci')">Esqueci minha senha</button>
+            <button class="forgot">Esqueci minha senha</button>
         </div>
 
         <div id="esqueciMinhaSenha">
@@ -53,11 +52,11 @@
             <br><br>
             <input type="password" placeholder="Insira a nova senha" id="inputNewPassword">
             <br><br>
-            <input type="password" placeholder="Confirmar senha" onkeyup="confirmaSenha()" id="inputSenhaEsqueci">
-            <button id="botaoAtualizar" onclick="recebeDados('esqueci')">Atualizar <p><p> senha</button>
+            <input type="password" placeholder="Confirmar senha" id="inputSenhaEsqueci">
+            <button id="botaoAtualizar">Atualizar <p><p> senha</button>
         </div>
 
     </div>
-
+<script type="module" src="../assets/js/paginas/login.js"></script>
 </body>
 </html>
